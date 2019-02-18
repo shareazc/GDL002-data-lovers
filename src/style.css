@@ -1,0 +1,56 @@
+.curtain {
+    width: 100%; /* Will make component fullscreen width */
+    height: 100vh; /* Will make height responsive */
+    overflow: hidden; /* Will make sure panels slide out of view once they slide open */
+}
+.curtain__wrapper {
+    width: 100%;
+    height: 100%;
+}
+.curtain__panel {
+    background: #b80000; 
+    width: 100%; /* This panel will be fullscreen wide */
+    height: 50%; /* This panel will always take half the screen height-wise */
+    float: left; /* Makes panels side-by-side */
+    position: relative; /*Needed to define z-index */
+    z-index: 2; /* Places panel in front of open Pokedex */
+    transition: all 1s ease-out; /* Animate transition */
+}
+.curtain__panel--left {
+    background-image: url("https://i.imgur.com/oDmJHew.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-100%); /* Slide panel UP of the container */
+}
+.curtain__panel--right {
+    background-image: url("https://i.imgur.com/hQ7UIub.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(100%); /* Slide panel DOWN of the container */
+}
+.curtain__prize {
+    background: #333;
+    position: absolute; /* Forces container into the container start */
+    z-index: 1; /*Places prize BEHIND curtain panels, which are z-index 2 */
+    width: 100%;
+    height: 100%;
+}
+input[type=checkbox] {
+    position: absolute; /* Force checkbox at the start of the container */
+    cursor: pointer; /* Makes curtain clickable */
+    width: 100%; /* Makes checkbox as wide as the component */
+    height: 100%; /* Same but with height */
+    z-index: 100; /* Put chechbox on top of everything else */
+    opacity: 0; /* HIDE the checkbox */
+}
+/* When checkbox is checked */
+/* Slide left panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--left {
+    transform: translateX(0);
+}
+/* Slide right panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--right {
+transform: translateX(0);
+}
