@@ -8,7 +8,7 @@
     height: 100%;
 }
 .curtain__panel {
-    background: #b80000; 
+    background: #cc0a0a; 
     width: 100%; /* This panel will be fullscreen wide */
     height: 50%; /* This panel will always take half the screen height-wise */
     float: left; /* Makes panels side-by-side */
