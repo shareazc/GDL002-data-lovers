@@ -1,7 +1,8 @@
+/*
 .curtain {
-    width: 100%; /* Will make component fullscreen width */
-    height: 100vh; /* Will make height responsive */
-    overflow: hidden; /* Will make sure panels slide out of view once they slide open */
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
 }
 .curtain__wrapper {
     width: 100%;
@@ -9,48 +10,99 @@
 }
 .curtain__panel {
     background: #cc0a0a; 
-    width: 100%; /* This panel will be fullscreen wide */
-    height: 50%; /* This panel will always take half the screen height-wise */
-    float: left; /* Makes panels side-by-side */
-    position: relative; /*Needed to define z-index */
-    z-index: 2; /* Places panel in front of open Pokedex */
-    transition: all 1s ease-out; /* Animate transition */
+    width: 100%; 
+    height: 50%;
+    float: left;
+    position: relative; 
+    z-index: 2; 
+    transition: all 1s ease-out; 
 }
 .curtain__panel--left {
     background-image: url("https://i.imgur.com/oDmJHew.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform: translateY(-100%); /* Slide panel UP of the container */
+    transform: translateY(-100%); 
 }
 .curtain__panel--right {
     background-image: url("https://i.imgur.com/hQ7UIub.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform: translateY(100%); /* Slide panel DOWN of the container */
+    transform: translateY(100%);
 }
 .curtain__prize {
     background: #333;
-    position: absolute; /* Forces container into the container start */
-    z-index: 1; /*Places prize BEHIND curtain panels, which are z-index 2 */
+    position: absolute; 
+    z-index: 1; 
     width: 100%;
     height: 100%;
 }
 input[type=checkbox] {
-    position: absolute; /* Force checkbox at the start of the container */
-    cursor: pointer; /* Makes curtain clickable */
-    width: 100%; /* Makes checkbox as wide as the component */
-    height: 100%; /* Same but with height */
-    z-index: 100; /* Put chechbox on top of everything else */
-    opacity: 0; /* HIDE the checkbox */
+    position: absolute;
+    cursor: pointer; 
+    width: 100%;
+    height: 100%; 
+    z-index: 100; 
+    opacity: 0; 
 }
-/* When checkbox is checked */
-/* Slide left panel in */
+
 input[type=checkbox]:checked ~ div.curtain__panel--left {
     transform: translateX(0);
 }
-/* Slide right panel in */
 input[type=checkbox]:checked ~ div.curtain__panel--right {
 transform: translateX(0);
+}
+*/
+/*
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #fb0505;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    height: 100vh;
+    margin: auto;
+    overflow: initial;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigationMenu{
+    position: -webkit-sticky;
+
+    position: sticky;
+    top: 0;
+    background: url(images/navigation-bar.png) no-repeat;
+    width: 90vw;
+    max-width: 90vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pictureScreen{
+    //background: url(images/picture-screen.png) no-repeat;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.pokemonInfo{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    padding-top: 5%;
 }

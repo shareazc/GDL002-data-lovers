@@ -2,30 +2,74 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Go!</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root"></div>
-    <!--<script src="./data/pokemon/pokemon.js">
+ 
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <input type="button" value="Menu" name="menuButton" class="menuItems" id="menuButton">
+          </li>
+          <li>
+            <div class="menuItems">
+            </div>
+          </li>
+          <li>
+            <input type="text" class="menuItems" placeholder=" # o Número" id="searchBar">
+            <input type="button" value="Buscar" class="menuItems" id="searchButton">
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="pokemonInfo pokemonPicture"></div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonNumberAndName"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonTypes"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonEvolutions"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonDescription"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonWeaknesses"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonGameInfo"></span>
+    </div>
+
+
+    <footer> Creado por Mel y Share :)</footer>
+
+
+    <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
-    <script src="main.js"></script> -->
-    
-    <!-- Parent component --> 
+    <script src="main.js"></script>
+    <!--
     <div class = "curtain">
-      <!-- Component wrapper -->
       <div class = "curtain__wrapper">
-        <!-- Chechbox hack -->
         <input type = "checkbox" checked>
-        <!-- Left curtain -->
         <div class = "curtain__panel curtain__panel--left"> 
-        </div><!-- left--curtain panel -->
-        <!-- panel behind curtain-->
-        <div class = "curtain__prize"></div> <!-- open pokedex -->
-        <!-- right curtain -->
+        </div>
+        <div class = "curtain__prize"></div> 
         <div class = "curtain__panel curtain__panel--right">
-        </div> <!-- right curtain panel -->
-      </div> <!-- curtain__wrapper -->
-    </div> <!-- curtain -->
+        </div> 
+      </div>
+    </div> -->
   </body>
 </html>
