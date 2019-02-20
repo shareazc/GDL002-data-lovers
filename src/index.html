@@ -27,30 +27,50 @@
       </nav>
     </header>
 
-    <div class="pokemonInfo pokemonPicture"></div>
-
     <div class="pokemonInfo">
-      <span class="pokemonNumberAndName"></span>
+      <figure>
+        <img src="" class="pokemonImg" id="pokemonPicture">
+      </figure>
     </div>
 
     <div class="pokemonInfo">
-      <span class="pokemonTypes"></span>
+      <span class="pokemonNumber" id="pokeNum"></span>
+      <span class="pokemonName" id="pokeName"></span>
     </div>
 
     <div class="pokemonInfo">
-      <span class="pokemonEvolutions"></span>
+      <label for="pokemonTypeSpan">Tipo: </label>
+      <span class="pokemonTypes" id="pokeType" name="pokemonTypeSpan"></span>
     </div>
 
     <div class="pokemonInfo">
-      <span class="pokemonDescription"></span>
+      <label for="pokemonEvolutionSpan">Evoluciones: </label>
+      <span class="pokemonEvolutions" id="pokeEvolution" name="pokemonEvolutionSpan"></span>
     </div>
 
     <div class="pokemonInfo">
-      <span class="pokemonWeaknesses"></span>
+      <label for="pokeDescriptionSpan">Descripción: </label>
+      <span class="pokemonDescription" id="pokeDescription" name="pokemonDescriptionSpan"></span>
     </div>
 
     <div class="pokemonInfo">
-      <span class="pokemonGameInfo"></span>
+      <label for="pokemonWeaknessesSpan">Debilidades: </label>
+      <span class="pokemonWeaknesses" id="pokeWeaknesses" name="pokemonWeaknessesSpan"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <p>Información de juego: </p>
+      <label for="frequencySpawnSpan">Frecuencia de aparición: </label>
+      <span class="pokemonInfo" id="frequencySpawn" name="frequencySpawnSpan"></span>
+
+      <label for="timeSpawnSpan">Tiempo de aparición: </label>
+      <span class="pokemonInfo" id="timeSpawn" name="timeSpawnSpan"></span>
+
+      <label for="kmEggSpan">Distancia para eclosión de huevo: </label>
+      <span class="pokemonInfo" id="kmEgg" name="kmEggSpan"></span>
+
+      <label for="candiesNumberSpan">Número de dulces para evolucionar: </label>
+      <span class="pokemonInfo" id="candies" name="candiesSpan"></span>
     </div>
 
 
