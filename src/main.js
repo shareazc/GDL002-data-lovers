@@ -1,23 +1,4 @@
 let selectedPokemon;
-<<<<<<< HEAD
-
-const pickPokemon = () => { //Seleccionar un pokemon al azar
-   const randomNumber = Math.floor(Math.random()*151);
-   selectedPokemon = POKEMON.pokemon[randomNumber];
-   return selectedPokemon;
-};
-
-const getPokemonName = () => { //Recibir el nombre del pokemon a buscar
-   selectedPokemon = document.getElementById('searchBar').value;
-   return selectedPokemon;
-}
-
-
-const findPokemon = () => {
-   const pokemonInfo = POKEMON.pokemon.find(pokemonName => pokemonName.name === getPokemonName());
-   //console.table(pokemonInfo);
-   return pokemonInfo;
-=======
 let pokemonObject;
 
 const pickPokemon = () => { //Seleccionar un pokemon al azar
@@ -94,7 +75,6 @@ const getName = () => {
     selectedPokemon = document.getElementById("searchBar").value;
     console.log(selectedPokemon);
     return selectedPokemon;
->>>>>>> 8257917de53183112e0d723d2db94ab5d0d1778f
 }
 
 // EVENT LISTENERS
