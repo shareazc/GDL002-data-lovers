@@ -2,16 +2,62 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Go!</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <input type="button" value="Menu" name="menuButton" class="menuItems" id="menuButton">
+          </li>
+          <li>
+            <div class="menuItems">
+            </div>
+          </li>
+          <li>
+            <input type="text" class="menuItems" placeholder=" # o Número" id="searchBar">
+            <input type="button" value="Buscar" class="menuItems" id="searchButton">
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="pokemonInfo pokemonPicture"></div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonNumberAndName"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonTypes"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonEvolutions"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonDescription"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonWeaknesses"></span>
+    </div>
+
+    <div class="pokemonInfo">
+      <span class="pokemonGameInfo"></span>
+    </div>
+
+
+    <footer> Creado por Mel y Share :)</footer>
+
+
+    <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
