@@ -1,4 +1,5 @@
 require('../src/data.js');
+const pokemon = require ( '../src/dara/pokemon/pokemon.js');
 
 
 describe('example', () => {
