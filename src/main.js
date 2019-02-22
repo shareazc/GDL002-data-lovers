@@ -1,3 +1,15 @@
+
+document.getElementById("openBtn").addEventListener("click", openNav = () => { 
+    document.getElementById("mySidenav").style.width = "250px";
+});
+
+document.getElementById("closeBtn").addEventListener("click", closeNav = () => {
+    document.getElementById("mySidenav").style.width = "0";
+});
+
+
+// Búsqueda y filtrado 
+
 let selectedPokemon;
 let pokemonObject;
 
@@ -51,7 +63,7 @@ let showInfo = () => { //Mostrar datos del pokemon
 
 
 // EVENT LISTENERS
-document.getElementById("searchButton").addEventListener("click",findPokemon); //Llamar al botón BUSCAR
+//document.getElementById("searchButton").addEventListener("click",findPokemon); //Llamar al botón BUSCAR
 
 
 
@@ -78,4 +90,5 @@ const getName = () => {
 }
 
 // EVENT LISTENERS
-document.getElementById('searchButton').addEventListener('click',findPokemon); //Llamar al botón BUSCAR
+document.getElementById('searchButton').addEventListener('click',findPokemon); //Llamar al botón BUSCAR */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

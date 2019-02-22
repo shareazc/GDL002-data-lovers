@@ -1,70 +1,101 @@
 <!DOCTYPE html>
 <html>
  <head>
-   <meta charset=“utf-8”>
-   <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <title>Pokédex Go!</title>
-   <link rel=“stylesheet” href=“style.css” />
+   <link rel="stylesheet" href="style.css" />
  </head>
  <body>
-   <div id=“root”></div>
-
-    <div class="pokemonInfo">
-      <figure>
-        <img src="" class="pokemonImg" id="pokemonPicture">
-      </figure>
-    </div>
-
-    <div class="pokemonInfo">
-      <span class="pokemonNumber" id="pokeNum"></span>
-      <span class="pokemonName" id="pokeName"></span>
-    </div>
-
-    <div class="pokemonInfo">
-      <label for="pokemonTypeSpan">Tipo: </label>
-      <span class="pokemonTypes" id="pokeType" name="pokemonTypeSpan"></span>
-    </div>
-
-    <div class="pokemonInfo">
-      <label for="pokemonEvolutionSpan">Evoluciones: </label>
-      <span class="pokemonEvolutions" id="pokeEvolution" name="pokemonEvolutionSpan"></span>
-    </div>
-
-    <div class="pokemonInfo">
-      <label for="pokeDescriptionSpan">Descripción: </label>
-      <span class="pokemonDescription" id="pokeDescription" name="pokemonDescriptionSpan"></span>
-    </div>
-
-    <div class="pokemonInfo">
-      <label for="pokemonWeaknessesSpan">Debilidades: </label>
-      <span class="pokemonWeaknesses" id="pokeWeaknesses" name="pokemonWeaknessesSpan"></span>
-    </div>
-
-    <div class="pokemonInfo">
-      <p>Información de juego: </p>
-      <label for="frequencySpawnSpan">Frecuencia de aparición: </label>
-      <span class="pokemonInfo" id="frequencySpawn" name="frequencySpawnSpan"></span>
-
-      <label for="timeSpawnSpan">Tiempo de aparición: </label>
-      <span class="pokemonInfo" id="timeSpawn" name="timeSpawnSpan"></span>
-
-      <label for="kmEggSpan">Distancia para eclosión de huevo: </label>
-      <span class="pokemonInfo" id="kmEgg" name="kmEggSpan"></span>
-
-      <label for="candiesNumberSpan">Número de dulces para evolucionar: </label>
-      <span class="pokemonInfo" id="candies" name="candiesSpan"></span>
-    </div>
-
-   <div class=“pokemonInfo”>
-     <span class=“pokemonGameInfo”></span>
-   </div>
+   <div id="root"></div>
+   <!-- Cortinillas -->
+  <div class="curtain">
+    <div class="curtain__wrapper">
+      <!-- Checkbox alv -->
+      <input type="checkbox" checked>
+      <div class="curtain__panel curtain__panel--left"> </div>
+      <!-- Pantalla de Inicio -->
+      <div class="start__screen">
+        <header>
+        <div class = "topNav">
+          <!-- Contenido slide menu -->
+          <div id = "mySidenav" class = "sidenav">
+          <a href="javascript:void(0)" class="closebtn" id = "closeBtn" > &times; </a>
+          <a href = "#">Tipo</a> 
+          <a href = "#"> Debilidad </a>
+          <a href = "#"> Lista completa </a>
+          </div>
+          <!-- Muestra barra nav-->
+          <span style="font-size:30px;cursor:pointer" id="openBtn"> &#9776; Avanzada </span>
+          <!-- Barra de búsqueda -->
+          <input type="text" class="menuItems" placeholder=" # o Número" id="searchBar">
+          <input type="button" value="Buscar" class="menuItems" id="searchButton">
+        </div>
+        </header> <!-- Fin barra nav-->
+        
+      
 
 
-   <footer> Creado por Mel y Share :)</footer>
+         <div class="pokemonInfo">
+            <figure>
+              <img src="" class="pokemonImg" id="pokemonPicture">
+            </figure>
+          </div>
+      
+          <div class="pokemonInfo">
+            <span class="pokemonNumber" id="pokeNum"></span>
+            <span class="pokemonName" id="pokeName"></span>
+          </div>
+      
+          <div class="pokemonInfo">
+            <label for="pokemonTypeSpan">Tipo: </label>
+            <span class="pokemonTypes" id="pokeType" name="pokemonTypeSpan"></span>
+          </div>
+      
+          <div class="pokemonInfo">
+            <label for="pokemonEvolutionSpan">Evoluciones: </label>
+            <span class="pokemonEvolutions" id="pokeEvolution" name="pokemonEvolutionSpan"></span>
+          </div>
+      
+          <div class="pokemonInfo">
+            <label for="pokeDescriptionSpan">Descripción: </label>
+            <span class="pokemonDescription" id="pokeDescription" name="pokemonDescriptionSpan"></span>
+          </div>
+      
+          <div class="pokemonInfo">
+            <label for="pokemonWeaknessesSpan">Debilidades: </label>
+            <span class="pokemonWeaknesses" id="pokeWeaknesses" name="pokemonWeaknessesSpan"></span>
+          </div>
+      
+          <div class="pokemonInfo">
+            <p>Información de juego: </p>
+            <label for="frequencySpawnSpan">Frecuencia de aparición: </label>
+            <span class="pokemonInfo" id="frequencySpawn" name="frequencySpawnSpan"></span>
+      
+            <label for="timeSpawnSpan">Tiempo de aparición: </label>
+            <span class="pokemonInfo" id="timeSpawn" name="timeSpawnSpan"></span>
+      
+            <label for="kmEggSpan">Distancia para eclosión de huevo: </label>
+            <span class="pokemonInfo" id="kmEgg" name="kmEggSpan"></span>
+      
+            <label for="candiesNumberSpan">Número de dulces para evolucionar: </label>
+            <span class="pokemonInfo" id="candies" name="candiesSpan"></span>
+          </div>
+      
+         <div class="pokemonInfo">
+           <span class="pokemonGameInfo"></span>
+         </div>
+      
+      
+         <footer> Creado por Mel y Share :)</footer>
+      </div> 
+      <div class="curtain__panel curtain__panel--right"> </div> 
+      
+    </div> <!-- curtain__wrapper -->
+  </div> <!-- curtain -->
 
-
-   <script src=“./data/pokemon/pokemon.js”></script>
-   <script src=“data.js”></script>
-   <script src=“main.js”></script>
+   <script src="./data/pokemon/pokemon.js"></script>
+   <script src="data.js"></script>
+   <script src="main.js"></script>
  </body>
-</html>
+ </html>
