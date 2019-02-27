@@ -2202,6 +2202,10 @@ var POKEMON = {
       "Rock",
       "Ground"
     ],
+    "typeImg":[
+      "images/types/rock.png",
+      "images/types/ground.png"
+    ],
     "description": "Graveler crece alimentándose a base de piedras. Y, según parece, las prefiere cubiertas de musgo. Cada día se abre camino comiéndose una tonelada de rocas.",	
     "height": "0.99 m",
     "weight": "105.0 kg",
@@ -2222,6 +2226,14 @@ var POKEMON = {
       "Fighting",
       "Ground",
       "Steel"
+    ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/grass.png",
+      "images/types/ice.png",
+      "images/types/fighting.png",
+      "images/types/ground.png",
+      "images/types/steel.png"
     ],
     "prev_evolution": [
       {
@@ -2245,6 +2257,10 @@ var POKEMON = {
       "Rock",
       "Ground"
     ],
+    "typeImg": [
+      "images/types/rock.png",
+      "images/types/ground.png"
+    ],
     "description":"Golem vive en las montañas. Si se produce un gran terremoto, estos Pokémon descienden rodando en masa por las laderas.",
     "height": "1.40 m",
     "weight": "300.0 kg",
@@ -2261,6 +2277,14 @@ var POKEMON = {
       "Fighting",
       "Ground",
       "Steel"
+    ],
+    "weaknessesImg": [
+      "images/types/water.png",
+      "images/types/grass.png",
+      "images/types/ice.png",
+      "images/types/fighting.png",
+      "images/types/ground.png",
+      "images/types/steel.png"
     ],
     "prev_evolution": [
       {
@@ -2281,6 +2305,9 @@ var POKEMON = {
     "type": [
       "Fire"
     ],
+    "typeImg":[
+      "images/types/fire.png"
+    ],
     "description": "Al nacer, Ponyta es muy débil y apenas puede ponerse en pie. Con todo, se va haciendo más fuerte al tropezarse y caerse en su intento por seguir a sus progenitores.", 
     "height": "0.99 m",
     "weight": "30.0 kg",
@@ -2299,6 +2326,11 @@ var POKEMON = {
       "Ground",
       "Rock"
     ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/ground.png",
+      "images/types/rock.png"
+    ],
     "next_evolution": [
       {
         "num": "078",
@@ -2314,6 +2346,9 @@ var POKEMON = {
     "type": [
       "Fire"
     ],
+    "typeImg":[
+      "images/types/fire.png"
+    ],
     "description" : "A Rapidash se le suele ver trotando sin rumbo fijo por los campos y llanos. Cuando tiene que ir a algún sitio en concreto, se le aviva el fuego de las melenas y emprende el galope llameante llegando a los 240 km/h.",
     "height": "1.70 m",
     "weight": "95.0 kg",
@@ -2327,6 +2362,11 @@ var POKEMON = {
       "Water",
       "Ground",
       "Rock"
+    ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/ground.png",
+      "images/types/rock.png"
     ],
     "prev_evolution": [
       {
@@ -2343,6 +2383,10 @@ var POKEMON = {
     "type": [
       "Water",
       "Psychic"
+    ],
+    "typeImg":[
+      "images/types/water.png",
+      "images/types/psychic.png"
     ],
     "description": "Slowpoke usa la cola para atrapar a sus presas metiéndola bajo el agua en las riberas de los ríos. Con todo, es olvidadizo, se le puede pasar lo que estaba haciendo y quedarse días enteros holgazaneando en la orilla.",
     "height": "1.19 m",
@@ -2363,6 +2407,13 @@ var POKEMON = {
       "Ghost",
       "Dark"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png",
+      "images/types/bug.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
+    ],
     "next_evolution": [
       {
         "num": "080",
@@ -2378,6 +2429,10 @@ var POKEMON = {
     "type": [
       "Water",
       "Psychic"
+    ],
+    "typeImg":[
+      "images/types/water.png",
+      "images/types/psychic.png"
     ],
     "description": "Slowbro lleva en la cola un Shellder enganchado, sujeto por los dientes. Como Slowbro no puede usar la cola para pescar, se mete en el agua de mala gana en busca de sus presas.",
     "height": "1.60 m",
@@ -2395,6 +2450,13 @@ var POKEMON = {
       "Ghost",
       "Dark"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png",
+      "images/types/bug.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
+    ],
     "prev_evolution": [
       {
         "num": "079",
@@ -2409,6 +2471,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/081.png",
     "type": [
       "Electric"
+    ],
+    "typeImg":[
+      "images/types/electric.png",
     ],
     "description": "Magnemite se engancha a las líneas de tensión para nutrirse de electricidad. Cuando se producen apagones en las casas, es aconsejable revisar el automático y comprobar que no hay Pokémon de este tipo colgados de la caja de fusibles.",
     "height": "0.30 m",
@@ -2428,6 +2493,11 @@ var POKEMON = {
       "Water",
       "Ground"
     ],
+    "weaknessesImg":[
+      "images/types/fire.png",
+      "images/types/water.png",
+      "images/types/ground.png"
+    ],
     "next_evolution": [
       {
         "num": "082",
@@ -2443,6 +2513,9 @@ var POKEMON = {
     "type": [
       "Electric"
     ],
+    "typeImg":[
+      "images/types/electric.png",
+    ],
     "description": "Magneton emite una fuerte energía magnética que causa estragos en los instrumentos mecánicos. Por ello, en las ciudades se avisa con sirenas cuando hay concentraciones de estos Pokémon.",
     "height": "0.99 m",
     "weight": "60.0 kg",
@@ -2456,6 +2529,11 @@ var POKEMON = {
       "Fire",
       "Water",
       "Ground"
+    ],
+    "weaknessesImg":[
+      "images/types/fire.png",
+      "images/types/water.png",
+      "images/types/ground.png"
     ],
     "prev_evolution": [
       {
@@ -2473,6 +2551,10 @@ var POKEMON = {
       "Normal",
       "Flying"
     ],
+    "typeImg":[
+      "images/types/normal.png",
+      "images/types/flying.png"
+    ],
     "description": "Al parecer, entre los puerros que suelen llevar los Farfetch'd, los hay mejores y peores. A estos Pokémon se les ha visto luchar entre ellos por los mejores puerros.",
     "height": "0.79 m",
     "weight": "15.0 kg",
@@ -2485,7 +2567,11 @@ var POKEMON = {
     "weaknesses": [
       "Electric",
       "Rock"
-    ]
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/rock.png"
+    ],
   },
   {
     "id": 84,
@@ -2495,6 +2581,10 @@ var POKEMON = {
     "type": [
       "Normal",
       "Flying"
+    ],
+    "typeImg":[
+      "images/types/normal.png",
+      "images/types/flying.png"
     ],
     "description": "Las dos cabezas de Doduo duermen de forma independiente, siempre por turnos. Mientras una duerme, la otra hace de centinela por si aparecen enemigos.",
     "height": "1.40 m",
@@ -2513,6 +2603,10 @@ var POKEMON = {
       "Electric",
       "Rock"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/rock.png"
+    ],
     "next_evolution": [
       {
         "num": "085",
@@ -2529,6 +2623,10 @@ var POKEMON = {
       "Normal",
       "Flying"
     ],
+    "typeImg":[
+      "images/types/normal.png",
+      "images/types/flying.png"
+    ],
     "description": "Según parece, las cabezas no son las únicas partes del cuerpo que tiene triplicadas. Dodrio también tiene tres corazones y tres pares de pulmones. Con esta constitución, puede correr largas distancias sin cansarse.",
     "height": "1.80 m",
     "weight": "85.2 kg",
@@ -2541,6 +2639,10 @@ var POKEMON = {
     "weaknesses": [
       "Electric",
       "Rock"
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/rock.png"
     ],
     "prev_evolution": [
       {
@@ -2556,6 +2658,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/086.png",
     "type": [
       "Water"
+    ],
+    "typeImg":[
+      "images/types/water.png",
     ],
     "description": "Seel busca a sus presas en aguas heladas, bajo las capas de hielo. Cuando necesita respirar, abre un agujerito en el hielo con la afilada protuberancia que tiene encima de la cabeza.",
     "height": "1.09 m",
@@ -2574,6 +2679,10 @@ var POKEMON = {
       "Electric",
       "Grass"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png"
+    ],
     "next_evolution": [
       {
         "num": "087",
@@ -2590,6 +2699,10 @@ var POKEMON = {
       "Water",
       "Ice"
     ],
+    "typeImg":[
+      "images/types/water.png",
+      "images/types/ice.png"
+    ],
     "description": "A Dewgong le encanta dormitar sobre la frialdad del hielo. Antiguamente, algún que otro marino lo confundió con una sirena al verlo dormido sobre un glaciar.",
     "height": "1.70 m",
     "weight": "120.0 kg",
@@ -2605,6 +2718,12 @@ var POKEMON = {
       "Fighting",
       "Rock"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png",
+      "images/types/fighting.png",
+      "images/types/rock.png"
+    ],
     "prev_evolution": [
       {
         "num": "086",
@@ -2619,6 +2738,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/088.png",
     "type": [
       "Poison"
+    ],
+    "typeImg":[
+      "images/types/poison.png"
     ],
     "description": "El elástico cuerpo de lodo de Grimer le permite colarse por cualquier orificio, sea del tamaño que sea. Este Pokémon entra en los bajantes de las cloacas para beberse el agua sucia.",
     "height": "0.89 m",
@@ -2636,6 +2758,10 @@ var POKEMON = {
       "Ground",
       "Psychic"
     ],
+    "weaknessesImg":[
+      "images/types/ground.png",
+      "images/types/psychic.png"
+    ],
     "next_evolution": [
       {
         "num": "089",
@@ -2651,6 +2777,9 @@ var POKEMON = {
     "type": [
       "Poison"
     ],
+    "typeImg":[
+      "images/types/poison.png"
+    ],
     "description": "Muk emana por todo el cuerpo un fluido maloliente que obliga a taparse la nariz. Con solo una gota de la sustancia que exuda este Pokémon, se podría contaminar un estanque.",
     "height": "1.19 m",
     "weight": "30.0 kg",
@@ -2663,6 +2792,10 @@ var POKEMON = {
     "weaknesses": [
       "Ground",
       "Psychic"
+    ],
+    "weaknessesImg":[
+      "images/types/ground.png",
+      "images/types/psychic.png"
     ],
     "prev_evolution": [
       {
@@ -2678,6 +2811,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/090.png",
     "type": [
       "Water"
+    ],
+    "typeImg":[
+      "images/types/water.png"
     ],
     "description": "Por la noche, este Pokémon usa la ancha lengua que tiene para hacer un agujero en el fondo del mar y echarse a dormir. Mientras duerme, Shellder cierra la concha, pero deja la lengua por fuera.",
     "height": "0.30 m",
@@ -2695,6 +2831,10 @@ var POKEMON = {
       "Electric",
       "Grass"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png"
+    ],
     "next_evolution": [
       {
         "num": "091",
@@ -2711,6 +2851,10 @@ var POKEMON = {
       "Water",
       "Ice"
     ],
+    "typeImg":[
+      "images/types/water.png",
+      "images/types/ice.png"
+    ],
     "description": "Cloyster es capaz de nadar por el mar. Su técnica consiste en tragar agua y expulsarla por el conducto que tiene en la parte trasera. Este mismo sistema es el que usa para lanzar los pinchos que tiene alrededor de la concha.",
     "height": "1.50 m",
     "weight": "132.5 kg",
@@ -2725,6 +2869,12 @@ var POKEMON = {
       "Grass",
       "Fighting",
       "Rock"
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png",
+      "images/types/fighting.png",
+      "images/types/rock.png"
     ],
     "prev_evolution": [
       {
@@ -2741,6 +2891,10 @@ var POKEMON = {
     "type": [
       "Ghost",
       "Poison"
+    ],
+    "typeImg":[
+      "images/types/ghost.png",
+      "images/types/poison.png"
     ],
     "description": "Gastly está compuesto en gran medida de materia gaseosa. Cuando hay viento, el aire arrastra parte de esta materia y el Pokémon mengua. Suelen agruparse bajo los aleros de las casas para resguardarse del viento.",
     "height": "1.30 m",
@@ -2759,6 +2913,12 @@ var POKEMON = {
       "Psychic",
       "Ghost",
       "Dark"
+    ],
+    "weaknessesImg":[
+      "images/types/ground.png",
+      "images/types/psychic.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
     ],
     "next_evolution": [
       {
@@ -2780,6 +2940,10 @@ var POKEMON = {
       "Ghost",
       "Poison"
     ],
+    "typeImg":[
+      "images/types/ghost.png",
+      "images/types/poison.png"
+    ],
     "description": "Haunter es un Pokémon peligroso. Si se ve alguno flotando en la oscuridad y haciendo señas, conviene no acercarse. Este Pokémon intentará robarle la energía a su presa a base de lametazos.",
     "height": "1.60 m",
     "weight": "0.1 kg",
@@ -2798,6 +2962,12 @@ var POKEMON = {
       "Psychic",
       "Ghost",
       "Dark"
+    ],
+    "weaknessesImg":[
+      "images/types/ground.png",
+      "images/types/psychic.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
     ],
     "prev_evolution": [
       {
@@ -2821,6 +2991,10 @@ var POKEMON = {
       "Ghost",
       "Poison"
     ],
+    "typeImg":[
+      "images/types/ghost.png",
+      "images/types/poison.png"
+    ],
     "description": "Si alguien ve que su sombra le adelanta de repente en una noche oscura, es muy probable que lo que esté viendo no sea su sombra, sino a un Gengar haciéndose pasar por la misma.",
     "height": "1.50 m",
     "weight": "40.5 kg",
@@ -2835,6 +3009,12 @@ var POKEMON = {
       "Psychic",
       "Ghost",
       "Dark"
+    ],
+    "weaknessesImg":[
+      "images/types/ground.png",
+      "images/types/psychic.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
     ],
     "prev_evolution": [
       {
@@ -2856,6 +3036,10 @@ var POKEMON = {
       "Rock",
       "Ground"
     ],
+    "typeImg":[
+      "images/types/rock.png",
+      "images/types/ground.png"
+    ],
     "description": "Onix tiene un imán en el cerebro, que actúa como una brújula para no perder la orientación cuando está cavando túneles. A medida que crece, se le redondea y suaviza el cuerpo.",
     "height": "8.79 m",
     "weight": "210.0 kg",
@@ -2872,7 +3056,15 @@ var POKEMON = {
       "Fighting",
       "Ground",
       "Steel"
-    ]
+    ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/grass.png",
+      "images/types/ice.png",
+      "images/types/fighting.png",
+      "images/types/ground.png",
+      "images/types/steel.png"
+    ],
   },
   {
     "id": 96,
@@ -2881,6 +3073,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/096.png",
     "type": [
       "Psychic"
+    ],
+    "typeImg":[
+      "images/types/psychic.png"
     ],
     "description": "Si a alguien le pica la nariz mientras duerme, seguro que es porque tiene a uno de estos Pokémon cerca de la almohada intentando sacarle los sueños por la nariz para comérselos.",
     "height": "0.99 m",
@@ -2900,6 +3095,11 @@ var POKEMON = {
       "Ghost",
       "Dark"
     ],
+    "weaknessesImg":[
+      "images/types/bug.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
+    ],
     "next_evolution": [
       {
         "num": "097",
@@ -2915,6 +3115,9 @@ var POKEMON = {
     "type": [
       "Psychic"
     ],
+    "typeImg":[
+      "images/types/psychic.png"
+    ],
     "description": "Hypno lleva un péndulo en la mano. El balanceo y el brillo que tiene sumen al rival en un estado de hipnosis profundo. Mientras busca a su presa, saca brillo al péndulo.",
     "height": "1.60 m",
     "weight": "75.6 kg",
@@ -2928,6 +3131,11 @@ var POKEMON = {
       "Bug",
       "Ghost",
       "Dark"
+    ],
+    "weaknessesImg":[
+      "images/types/bug.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
     ],
     "prev_evolution": [
       {
@@ -2943,6 +3151,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/098.png",
     "type": [
       "Water"
+    ],
+    "typeImg":[
+      "images/types/water.png"
     ],
     "description": "Krabby vive en la playa, enterrado en agujeros en la arena. Cuando en las playas de arena fina escasea la comida, es común ver a estos Pokémon echando un pulso panza contra panza en defensa de su territorio.",
     "height": "0.41 m",
@@ -2961,6 +3172,10 @@ var POKEMON = {
       "Electric",
       "Grass"
     ],
+    "weaknesses":[
+      "images/types/electric.png",
+      "images/types/grass.png"
+    ],
     "next_evolution": [
       {
         "num": "099",
@@ -2976,6 +3191,9 @@ var POKEMON = {
     "type": [
       "Water"
     ],
+    "typeImg":[
+      "images/types/water.png"
+    ],
     "description": "Kingler tiene una pinza enorme y descomunal que usa agitándola en el aire para comunicarse con otros. Lo malo es que, al pesarle tanto, se cansa enseguida.",
     "height": "1.30 m",
     "weight": "60.0 kg",
@@ -2988,6 +3206,10 @@ var POKEMON = {
     "weaknesses": [
       "Electric",
       "Grass"
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png"
     ],
     "prev_evolution": [
       {
@@ -3003,6 +3225,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/100.png",
     "type": [
       "Electric"
+    ],
+    "typeImg":[
+      "images/types/electric.png"
     ],
     "description": "Voltorb fue visto por primera vez en una empresa encargada de comercializar Poké Balls. La conexión que existe entre aquella primera vez que se le vio y el hecho de que se parece mucho a una Poké Ball sigue siendo un misterio.",
     "height": "0.51 m",
@@ -3020,6 +3245,9 @@ var POKEMON = {
     "weaknesses": [
       "Ground"
     ],
+    "weaknessesImg":[
+      "images/types/ground.png"
+    ],
     "next_evolution": [
       {
         "num": "101",
@@ -3035,6 +3263,9 @@ var POKEMON = {
     "type": [
       "Electric"
     ],
+    "typeImg":[
+      "images/types/electric.png"
+    ],
     "description": "Los Electrode se alimentan de la electricidad de la atmósfera. En días de tormenta con rayos, es fácil verlos explotando por todos lados tras haber consumido demasiada electricidad.",
     "height": "1.19 m",
     "weight": "66.6 kg",
@@ -3046,6 +3277,9 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Ground"
+    ],
+    "weaknessesImg":[
+      "images/types/ground.png"
     ],
     "prev_evolution": [
       {
@@ -3062,6 +3296,10 @@ var POKEMON = {
     "type": [
       "Grass",
       "Psychic"
+    ],
+    "typeImg":[
+      "images/types/grass.png",
+      "images/types/psychic.png"
     ],
     "description": "Este Pokémon está compuesto de seis huevos que forman una tupida piña que va girando. Cuando se empiezan a resquebrajar las cáscaras, no hay duda de que Exeggcute está a punto de evolucionar.",
     "height": "0.41 m",
@@ -3085,6 +3323,15 @@ var POKEMON = {
       "Ghost",
       "Dark"
     ],
+    "weaknessesImg":[
+      "images/types/fire.png",
+      "images/types/ice.png",
+      "images/types/poison.png",
+      "images/types/flying.png",
+      "images/types/bug.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
+    ],
     "next_evolution": [
       {
         "num": "103",
@@ -3100,6 +3347,10 @@ var POKEMON = {
     "type": [
       "Grass",
       "Psychic"
+    ],
+    "typeImg":[
+      "images/types/grass.png",
+      "images/types/psychic.png"
     ],
     "description": "Exeggutor es originario del trópico. Cuando se expone a un sol intenso, le empiezan a crecer las cabezas. Hay quien dice que, cuando las cabezas caen al suelo, se unen para formar un Exeggcute.",
     "height": "2.01 m",
@@ -3119,6 +3370,15 @@ var POKEMON = {
       "Ghost",
       "Dark"
     ],
+    "weaknessesImg":[
+      "images/types/fire.png",
+      "images/types/ice.png",
+      "images/types/poison.png",
+      "images/types/flying.png",
+      "images/types/bug.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
+    ],
     "prev_evolution": [
       {
         "num": "102",
@@ -3133,6 +3393,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/104.png",
     "type": [
       "Ground"
+    ],
+    "typeImg":[
+      "images/types/ground.png"
     ],
     "description": "A Cubone le ahoga la pena porque no volverá a ver jamás a su madre. La luna le recuerda a veces a ella, y se pone a llorar. Los churretes que tiene en el cráneo que lleva puesto son debidos a las lágrimas que derrama.",
     "height": "0.41 m",
@@ -3151,6 +3414,11 @@ var POKEMON = {
       "Grass",
       "Ice"
     ],
+    "weaknesses":[
+      "images/types/water.png",
+      "images/types/grass.png",
+      "images/types/ice.png"
+    ],
     "next_evolution": [
       {
         "num": "105",
@@ -3166,6 +3434,9 @@ var POKEMON = {
     "type": [
       "Ground"
     ],
+    "typeImg":[
+      "images/types/ground.png"
+    ],
     "description": "Marowak es la forma evolucionada de Cubone. Es más fuerte porque ha superado la pena por la pérdida de su madre. El ánimo de este Pokémon, ya curtido y fortalecido, no es muy fácil de alterar.",
     "height": "0.99 m",
     "weight": "45.0 kg",
@@ -3179,6 +3450,11 @@ var POKEMON = {
       "Water",
       "Grass",
       "Ice"
+    ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/grass.png",
+      "images/types/ice.png"
     ],
     "prev_evolution": [
       {
@@ -3195,6 +3471,9 @@ var POKEMON = {
     "type": [
       "Fighting"
     ],
+    "typeImg":[
+      "images/types/fighting.png"
+    ],
     "description": "Hitmonlee tiene la facilidad de encoger y estirar las patas. Con extremidades tan flexibles, propina unas patadas demoledoras. Tras la lucha, se masajea las piernas y relaja los músculos para descansar.",
     "height": "1.50 m",
     "weight": "49.8 kg",
@@ -3208,7 +3487,12 @@ var POKEMON = {
       "Flying",
       "Psychic",
       "Fairy"
-    ]
+    ],
+    "weaknessesImg":[
+      "images/types/flying.png",
+      "images/types/psychic.png",
+      "images/types/fairy.png"
+    ],
   },
   {
     "id": 107,
@@ -3217,6 +3501,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/107.png",
     "type": [
       "Fighting"
+    ],
+    "typeImg":[
+      "images/types/fighting.png"
     ],
     "description": "Dicen que Hitmonchan tiene el mismo ímpetu que un boxeador entrenándose para un campeonato mundial. Este Pokémon tiene un espíritu indomable que nunca se doblega ante la adversidad.",	
     "height": "1.40 m",
@@ -3231,7 +3518,12 @@ var POKEMON = {
       "Flying",
       "Psychic",
       "Fairy"
-    ]
+    ],
+    "weaknessesImg":[
+      "images/types/flying.png",
+      "images/types/psychic.png",
+      "images/types/fairy.png"
+    ],
   },
   {
     "id": 108,
@@ -3240,6 +3532,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/108.png",
     "type": [
       "Normal"
+    ],
+    "typeImg":[
+      "images/types/normal.png"
     ],
     "description": "Cada vez que Lickitung se encuentra con algo que no conoce, le da un lametazo. Es la forma que tiene de memorizar las cosas, por la textura y el sabor. No soporta los sabores ácidos.",
     "height": "1.19 m",
@@ -3252,7 +3547,10 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Fighting"
-    ]
+    ],
+    "weaknessesImg":[
+      "images/types/fighting.png"
+    ],
   },
   {
     "id": 109,
@@ -3261,6 +3559,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/109.png",
     "type": [
       "Poison"
+    ],
+    "typeImg":[
+      "images/types/poison.png"
     ],
     "description": "Si Koffing se pone nervioso, aumenta el nivel de toxicidad de los gases que tiene y los expulsa por todo el cuerpo. También suele hincharse mucho hasta llegar a explotar.",
     "height": "0.61 m",
@@ -3278,6 +3579,10 @@ var POKEMON = {
       "Ground",
       "Psychic"
     ],
+    "weaknessesImg":[
+      "images/types/ground.png",
+      "images/types/psychic.png"
+    ],
     "next_evolution": [
       {
         "num": "110",
@@ -3293,6 +3598,9 @@ var POKEMON = {
     "type": [
       "Poison"
     ],
+    "typeImg":[
+      "images/types/poison.png"
+    ],
     "description": "A Weezing le encantan los gases que emanan de los desperdicios que quedan en la cocina. Este Pokémon busca casas sucias y descuidadas para crear su hogar. De noche, cuando los habitantes de la casa duermen, va a por la basura.",
     "height": "1.19 m",
     "weight": "9.5 kg",
@@ -3305,6 +3613,10 @@ var POKEMON = {
     "weaknesses": [
       "Ground",
       "Psychic"
+    ],
+    "weaknessesImg":[
+      "images/types/ground.png",
+      "images/types/psychic.png"
     ],
     "prev_evolution": [
       {
@@ -3321,6 +3633,10 @@ var POKEMON = {
     "type": [
       "Ground",
       "Rock"
+    ],
+    "typeImg":[
+      "images/types/ground.png",
+      "images/types/rock.png"
     ],
     "description": "Rhyhorn corre en línea recta arrasando todo lo que encuentra en su camino. Aun estrellándose de cabeza contra un bloque de acero, no se vería afectado; a lo sumo, notaría algo de dolor al día siguiente.",
     "height": "0.99 m",
@@ -3342,6 +3658,14 @@ var POKEMON = {
       "Ground",
       "Steel"
     ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/grass.png",
+      "images/types/ice.png",
+      "images/types/fighting.png",
+      "images/types/ground.png",
+      "images/types/steel.png"
+    ],
     "next_evolution": [
       {
         "num": "112",
@@ -3357,6 +3681,10 @@ var POKEMON = {
     "type": [
       "Ground",
       "Rock"
+    ],
+    "typeImg":[
+      "images/types/ground.png",
+      "images/types/rock.png"
     ],
     "description": "Rhydon tiene un cuerno capaz de horadar hasta un diamante en bruto y con una sacudida de la cola puede derribar un edificio. La piel de este Pokémon es muy fuerte; ni los disparos de un cañón le arañarían.",
     "height": "1.91 m",
@@ -3375,6 +3703,14 @@ var POKEMON = {
       "Ground",
       "Steel"
     ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/grass.png",
+      "images/types/ice.png",
+      "images/types/fighting.png",
+      "images/types/ground.png",
+      "images/types/steel.png"
+    ],
     "prev_evolution": [
       {
         "num": "111",
@@ -3390,6 +3726,9 @@ var POKEMON = {
     "type": [
       "Normal"
     ],
+    "typeImg":[
+      "images/types/normal.png"
+    ],
     "description": "Chansey pone a diario huevos con un valor nutritivo altísimo. Están tan ricos que hasta quien no tenga hambre se los comerá en un abrir y cerrar de ojos.",
     "height": "1.09 m",
     "weight": "34.6 kg",
@@ -3401,7 +3740,10 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Fighting"
-    ]
+    ],
+    "weaknesses":[
+      "images/types/fighting.png"
+    ],
   },
   {
     "id": 114,
@@ -3410,6 +3752,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/114.png",
     "type": [
       "Grass"
+    ],
+    "typeImg":[
+      "images/types/grass.png"
     ],
     "description": "A Tangela se le desprenden los tentáculos con facilidad en cuanto se los agarras. Y no solo no le duele, sino que le resulta muy útil para escapar rápido. Además, al día siguiente le crecen otros.",
     "height": "0.99 m",
@@ -3426,6 +3771,13 @@ var POKEMON = {
       "Poison",
       "Flying",
       "Bug"
+    ],
+    "weaknessesImg":[
+      "images/types/fire.png",
+      "images/types/ice.png",
+      "images/types/poison.png",
+      "images/types/flying.png",
+      "images/types/bug.png"
     ]
   },
   {
@@ -3435,6 +3787,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/115.png",
     "type": [
       "Normal"
+    ],
+    "typeImg":[
+      "images/types/normal.png"
     ],
     "description": "No es recomendable molestar ni intentar atrapar a crías de Kangaskhan mientras estén jugando, ya que seguro que su madre anda cerca y reaccionará con enfado y violencia.",
     "height": "2.21 m",
@@ -3447,7 +3802,10 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Fighting"
-    ]
+    ],
+    "weaknessesImg":[
+      "images/types/fighting.png"
+    ],
   },
   {
     "id": 116,
@@ -3456,6 +3814,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/116.png",
     "type": [
       "Water"
+    ],
+    "typeImg":[
+      "images/types/water.png"
     ],
     "description": "Horsea come insectos pequeños y el musgo de las rocas. Si las corrientes del océano cobran fuerza, este Pokémon se anclará con la cola a rocas o corales para evitar que las aguas lo arrastren.",
     "height": "0.41 m",
@@ -3473,6 +3834,10 @@ var POKEMON = {
       "Electric",
       "Grass"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png"
+    ],
     "next_evolution": [
       {
         "num": "117",
@@ -3488,6 +3853,9 @@ var POKEMON = {
     "type": [
       "Water"
     ],
+    "typeImg":[
+      "images/types/water.png"
+    ],
     "description": "Seadra se echa a dormir tras abrirse un hueco entre las ramas de los corales. Los pescadores de coral suelen pincharse con las púas venenosas de estos Pokémon si no los ven.",
     "height": "1.19 m",
     "weight": "25.0 kg",
@@ -3500,6 +3868,10 @@ var POKEMON = {
     "weaknesses": [
       "Electric",
       "Grass"
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png"
     ],
     "prev_evolution": [
       {
@@ -3515,6 +3887,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/118.png",
     "type": [
       "Water"
+    ],
+    "typeImg":[
+      "images/types/water.png"
     ],
     "description": "Goldeen es un bello Pokémon que mueve con elegancia las aletas en el agua. Con todo, no hay que bajar la guardia, en cualquier momento puede embestir con el cuerno.",
     "height": "0.61 m",
@@ -3533,6 +3908,10 @@ var POKEMON = {
       "Electric",
       "Grass"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png"
+    ],
     "next_evolution": [
       {
         "num": "119",
@@ -3548,6 +3927,9 @@ var POKEMON = {
     "type": [
       "Water"
     ],
+    "typeImg":[
+      "images/types/electric.png"
+    ],
     "description": "En otoño, se ven ejemplares de Seaking macho danzando en las riberas de los ríos para cortejar a las hembras. En esta época, la coloración de este Pokémon alcanza sus niveles máximos de belleza.",
     "height": "1.30 m",
     "weight": "39.0 kg",
@@ -3560,6 +3942,10 @@ var POKEMON = {
     "weaknesses": [
       "Electric",
       "Grass"
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png"
     ],
     "prev_evolution": [
       {
@@ -3575,6 +3961,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/120.png",
     "type": [
       "Water"
+    ],
+    "typeImg":[
+      "images/types/electric.png"
     ],
     "description": "Staryu posee un órgano central, conocido como su núcleo, que brilla con una luz roja. A finales de verano, pueden verse en la playa los núcleos de estos Pokémon brillando como las estrellas del cielo.",
     "height": "0.79 m",
@@ -3593,6 +3982,10 @@ var POKEMON = {
       "Electric",
       "Grass"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png"
+    ],
     "next_evolution": [
       {
         "num": "121",
@@ -3608,6 +4001,10 @@ var POKEMON = {
     "type": [
       "Water",
       "Psychic"
+    ],
+    "typeImg":[
+      "images/types/water.png",
+      "images/types/psychic.png"
     ],
     "description": "La parte central de Starmie, el núcleo brillante, resplandece con siete colores distintos. Debido a su naturaleza luminosa, a este Pokémon se le ha dado el apelativo de la Gema del Mar.",
     "height": "1.09 m",
@@ -3625,6 +4022,13 @@ var POKEMON = {
       "Ghost",
       "Dark"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png",
+      "images/types/bug.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
+    ],
     "prev_evolution": [
       {
         "num": "120",
@@ -3641,6 +4045,10 @@ var POKEMON = {
       "Psychic",
       "Fairy",
     ],
+    "typeImg":[
+      "images/types/psychic.png",
+      "images/types/fairy.png"
+    ],
     "description": "Mr. Mime es un experto en pantomima. Con sus gestos y movimientos es capaz de convencer a sus espectadores de que algo existe, cuando en realidad no es así. Pero, cuando el público se lo cree, las ilusiones se hacen realidad.",
     "height": "1.30 m",
     "weight": "54.5 kg",
@@ -3654,6 +4062,11 @@ var POKEMON = {
       "Steel",
       "Ghost",
       "Poison"
+    ],
+    "weaknessesImg":[
+      "images/types/steel.png",
+      "images/types/ghost.png",
+      "images/types/poison.png"
     ]
   },
   {
@@ -3664,6 +4077,10 @@ var POKEMON = {
     "type": [
       "Bug",
       "Flying"
+    ],
+    "typeImg":[
+      "images/types/bug.png",
+      "images/types/flying.png"
     ],
     "description": "Es espectacular ver lo rápido que es Scyther. Su increíble velocidad refuerza el efecto del par de guadañas que tiene en los brazos, que ya son de por sí contundentes; rebanan gruesos troncos de un tajo.",
     "height": "1.50 m",
@@ -3680,6 +4097,13 @@ var POKEMON = {
       "Ice",
       "Flying",
       "Rock"
+    ],
+    "weaknessesImg":[
+      "images/types/fire.png",
+      "images/types/electric.png",
+      "images/types/ice.png",
+      "images/types/flying.png",
+      "images/types/rock.png"
     ]
   },
   {
@@ -3690,6 +4114,10 @@ var POKEMON = {
     "type": [
       "Ice",
       "Psychic"
+    ],
+    "typeImg":[
+      "images/types/ice.png",
+      "images/types/psychic.png"
     ],
     "description": "Jynx camina con ritmo, balanceándose y moviendo las caderas como si estuviera bailando. Realiza unos movimientos tan vistosos y atractivos que no hay quien pueda resistirse a mover las caderas.",
     "height": "1.40 m",
@@ -3707,6 +4135,14 @@ var POKEMON = {
       "Ghost",
       "Dark",
       "Steel"
+    ],
+    "weaknessesImg":[
+      "images/types/fire.png",
+      "images/types/bug.png",
+      "images/types/rock.png",
+      "images/types/ghost.png",
+      "images/types/dark.png",
+      "images/types/steel.png"
     ]
   },
   {
@@ -3716,6 +4152,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/125.png",
     "type": [
       "Electric"
+    ],
+    "typeImg":[
+      "images/types/electric.png"
     ],
     "description": "Al desatarse una tormenta, bandadas de estos Pokémon se enfrentan entre sí para ver quién alcanza antes sitios altos en los que suelan caer rayos. Hay ciudades que usan Electabuzz en lugar de pararrayos.",
     "height": "1.09 m",
@@ -3728,6 +4167,9 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Ground"
+    ],
+    "weaknessesImg":[
+      "images/types/ground.png"
     ]
   },
   {
@@ -3737,6 +4179,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/126.png",
     "type": [
       "Fire"
+    ],
+    "typeImg":[
+      "images/types/fire.png"
     ],
     "description": "Al luchar, Magmar expulsa violentas llamas por todo el cuerpo para intimidar a su rival. Estos estallidos de fuego crean ondas de calor que abrasan la hierba y los árboles que haya en las proximidades.",
     "height": "1.30 m",
@@ -3751,7 +4196,12 @@ var POKEMON = {
       "Water",
       "Ground",
       "Rock"
-    ]
+    ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/ground.png",
+      "images/types/rock.png"
+    ],
   },
   {
     "id": 127,
@@ -3760,6 +4210,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/127.png",
     "type": [
       "Bug"
+    ],
+    "typeImg":[
+      "images/types/bug.png"
     ],
     "description": "Pinsir es sorprendentemente fuerte. Puede agarrar con los cuernos a un rival que pese el doble que él y levantarlo por los aires. En zonas frías, los movimientos de este Pokémon se vuelven lentos.",
     "height": "1.50 m",
@@ -3774,6 +4227,11 @@ var POKEMON = {
       "Fire",
       "Flying",
       "Rock"
+    ],
+    "weaknessesImg":[
+      "images/types/fire.png",
+      "images/types/flying.png",
+      "images/types/rock.png"
     ]
   },
   {
@@ -3783,6 +4241,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/128.png",
     "type": [
       "Normal"
+    ],
+    "typeImg":[
+      "images/types/normal.png"
     ],
     "description": "Este Pokémon no está contento a menos que esté continuamente de aquí para allá. Si no hay rival que luche contra Tauros, se estampa contra árboles grandes para calmarse y los embiste para echarlos abajo.",
     "height": "1.40 m",
@@ -3795,6 +4256,9 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Fighting"
+    ],
+    "weaknessesImg":[
+      "images/types/fighting.png"
     ]
   },
   {
@@ -3804,6 +4268,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png",
     "type": [
       "Water"
+    ],
+    "typeImg":[
+      "images/types/water.png"
     ],
     "description": "Magikarp es el triste ejemplo de un Pokémon capaz únicamente de saltar y salpicar. Esta conducta llevó a científicos a estudiarlo en profundidad.",
     "height": "0.89 m",
@@ -3822,6 +4289,10 @@ var POKEMON = {
       "Electric",
       "Grass"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png"
+    ],
     "next_evolution": [
       {
         "num": "130",
@@ -3838,6 +4309,10 @@ var POKEMON = {
       "Water",
       "Flying"
     ],
+    "typeImg":[
+      "images/types/water.png",
+      "images/types/flying.png"
+    ],
     "description": "Cuando Magikarp evoluciona y se convierte en Gyarados, sufre un cambio estructural en las células del cerebro. Dicen que esa transformación es la causa de la naturaleza violenta y salvaje de este Pokémon.",
     "height": "6.50 m",
     "weight": "235.0 kg",
@@ -3850,6 +4325,10 @@ var POKEMON = {
     "weaknesses": [
       "Electric",
       "Rock"
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/rock.png"
     ],
     "prev_evolution": [
       {
@@ -3867,6 +4346,10 @@ var POKEMON = {
       "Water",
       "Ice"
     ],
+    "typeImg":[
+      "images/types/water.png",
+      "images/types/ice.png"
+    ],
     "description": "Por culpa de la gente, Lapras está casi en extinción. Dicen que, al anochecer, se pone a cantar quejicoso mientras busca a los miembros de su especie que puedan quedar.",
     "height": "2.49 m",
     "weight": "220.0 kg",
@@ -3881,6 +4364,12 @@ var POKEMON = {
       "Grass",
       "Fighting",
       "Rock"
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png",
+      "images/types/fighting.png",
+      "images/types/rock.png"
     ]
   },
   {
@@ -3890,6 +4379,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png",
     "type": [
       "Normal"
+    ],
+    "typeImg":[
+      "images/types/normal.png"
     ],
     "description": "Ditto reorganiza la estructura de sus células para adoptar otras formas. Pero, como intente transformarse en algo guiándose por los datos que tenga almacenados en la memoria, habrá detalles que se le escapen.",
     "height": "0.30 m",
@@ -3902,6 +4394,9 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Fighting"
+    ],
+    "weaknessesImg":[
+      "images/types/fighting.png"
     ]
   },
   {
@@ -3911,6 +4406,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
     "type": [
       "Normal"
+    ],
+    "typeImg":[
+      "images/types/normal.png"
     ],
     "description": "La configuración genética de Eevee le permite mutar y adaptarse enseguida a cualquier medio en el que viva. La evolución de este Pokémon suele ser posible gracias a las radiaciones emitidas por varias piedras.",
     "height": "0.30 m",
@@ -3927,6 +4425,9 @@ var POKEMON = {
     ],
     "weaknesses": [
       "Fighting"
+    ],
+    "weaknessesImg":[
+      "images/types/fighting.png"
     ],
     "next_evolution": [
       {
@@ -3951,6 +4452,9 @@ var POKEMON = {
     "type": [
       "Water"
     ],
+    "typeImg":[
+      "images/types/water.png"
+    ],
     "description": "Vaporeon sufrió una mutación repentina y desarrolló aletas y branquias que le permiten vivir bajo el agua. Asimismo, este Pokémon tiene la habilidad de controlar las aguas.",
     "height": "0.99 m",
     "weight": "29.0 kg",
@@ -3963,6 +4467,10 @@ var POKEMON = {
     "weaknesses": [
       "Electric",
       "Grass"
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png"
     ],
     "prev_evolution": [
       {
@@ -3979,6 +4487,9 @@ var POKEMON = {
     "type": [
       "Electric"
     ],
+    "typeImg":[
+      "images/types/electric.png"
+    ],
     "description": "Las células de Jolteon generan un nivel bajo de electricidad, cuya intensidad aumenta con la electricidad estática que acumula en un pelaje formado por agujas cargadas de electricidad. Esta característica le permite lanzar rayos.",
     "height": "0.79 m",
     "weight": "24.5 kg",
@@ -3990,6 +4501,9 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Ground"
+    ],
+    "weaknessesImg":[
+      "images/types/ground.png"
     ],
     "prev_evolution": [
       {
@@ -4006,6 +4520,9 @@ var POKEMON = {
     "type": [
       "Fire"
     ],
+    "typeImg":[
+      "images/types/fire.png"
+    ],
     "description": "La suavidad del pelaje de Flareon tiene una función clara: libera calor para que el Pokémon no se asfixie. La temperatura corporal de este Pokémon puede alcanzar los 900 °C.",
     "height": "0.89 m",
     "weight": "25.0 kg",
@@ -4019,6 +4536,11 @@ var POKEMON = {
       "Water",
       "Ground",
       "Rock"
+    ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/ground.png",
+      "images/types/rock.png"
     ],
     "prev_evolution": [
       {
@@ -4035,6 +4557,9 @@ var POKEMON = {
     "type": [
       "Normal"
     ],
+    "typeImg":[
+      "images/types/normal.png"
+    ],
     "description": "Porygon es capaz de convertirse otra vez en datos informáticos y de entrar en el ciberespacio. Tiene protección anticopia, así que es imposible duplicarlo.",
     "height": "0.79 m",
     "weight": "36.5 kg",
@@ -4046,6 +4571,9 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Fighting"
+    ],
+    "weaknessesImg":[
+      "images/types/fighting.png"
     ]
   },
   {
@@ -4056,6 +4584,10 @@ var POKEMON = {
     "type": [
       "Rock",
       "Water"
+    ],
+    "typeImg":[
+      "images/types/rock.png",
+      "images/types/water.png"
     ],
     "description": "Omanyte es uno de esos Pokémon ancestrales que se extinguieron hace muchísimo tiempo y que la gente ha recuperado a partir de fósiles. Si un enemigo le ataca, se esconderá dentro de la dura concha que tiene.",
     "height": "0.41 m",
@@ -4075,6 +4607,12 @@ var POKEMON = {
       "Fighting",
       "Ground"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png",
+      "images/types/fighting.png",
+      "images/types/ground.png"
+    ],
     "next_evolution": [
       {
         "num": "139",
@@ -4091,6 +4629,10 @@ var POKEMON = {
       "Rock",
       "Water"
     ],
+    "typeImg":[
+      "images/types/rock.png",
+      "images/types/water.png"
+    ],
     "description": "Omastar usa los tentáculos para atrapar a su presa. Se cree que el motivo de su extinción fue el tamaño y el peso que llegó a alcanzar la concha que lleva a cuestas, lo que le entorpeció y ralentizó los movimientos.",
     "height": "0.99 m",
     "weight": "35.0 kg",
@@ -4105,6 +4647,12 @@ var POKEMON = {
       "Grass",
       "Fighting",
       "Ground"
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png",
+      "images/types/fighting.png",
+      "images/types/ground.png"
     ],
     "prev_evolution": [
       {
@@ -4121,6 +4669,10 @@ var POKEMON = {
     "type": [
       "Rock",
       "Water"
+    ],
+    "typeImg":[
+      "images/types/rock.png",
+      "images/types/water.png"
     ],
     "description": "Kabuto es un Pokémon regenerado a partir de un fósil, aunque, en raras ocasiones, se han encontrado casos de ejemplares vivos en estado salvaje. En 300 millones de años, este Pokémon no ha cambiado en nada.",
     "height": "0.51 m",
@@ -4141,6 +4693,12 @@ var POKEMON = {
       "Fighting",
       "Ground"
     ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png",
+      "images/types/fighting.png",
+      "images/types/ground.png"
+    ],
     "next_evolution": [
       {
         "num": "141",
@@ -4157,6 +4715,10 @@ var POKEMON = {
       "Rock",
       "Water"
     ],
+    "typeImg":[
+      "images/types/rock.png",
+      "images/types/water.png"
+    ],
     "description": "Hace mucho tiempo, Kabutops buceaba para atrapar a sus presas. Parece ser que en algún momento cambió de hábitat y se adaptó a vivir en tierra firme. La transformación que se aprecia en las patas y branquias así lo confirma.",
     "height": "1.30 m",
     "weight": "40.5 kg",
@@ -4171,6 +4733,12 @@ var POKEMON = {
       "Grass",
       "Fighting",
       "Ground"
+    ],
+    "weaknessesImg":[
+      "images/types/electric.png",
+      "images/types/grass.png",
+      "images/types/fighting.png",
+      "images/types/ground.png"
     ],
     "prev_evolution": [
       {
@@ -4188,6 +4756,10 @@ var POKEMON = {
       "Rock",
       "Flying"
     ],
+    "typeImg":[
+      "images/types/rock.png",
+      "images/types/flying.png"
+    ],
     "description": "Los orígenes de Aerodactyl datan de la era de los dinosaurios. Se regeneró a partir de material genético contenido en ámbar. Se supone que fue el amo de los cielos en épocas pasadas.",
     "height": "1.80 m",
     "weight": "59.0 kg",
@@ -4203,6 +4775,13 @@ var POKEMON = {
       "Ice",
       "Rock",
       "Steel"
+    ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/electric.png",
+      "images/types/ice.png",
+      "images/types/rock.png",
+      "images/types/steel.png"
     ]
   },
   {
@@ -4212,6 +4791,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png",
     "type": [
       "Normal"
+    ],
+    "typeImg":[
+      "images/types/normal.png"
     ],
     "description": "Un día cualquiera en la vida de Snorlax consiste en comer y dormir. Es un Pokémon tan dócil que es fácil ver niños usando la gran panza que tiene como lugar de juegos.",
     "height": "2.11 m",
@@ -4224,6 +4806,9 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Fighting"
+    ],
+    "weaknessesImg":[
+      "images/types/fighting.png"
     ]
   },
   {
@@ -4234,6 +4819,10 @@ var POKEMON = {
     "type": [
       "Ice",
       "Flying"
+    ],
+    "typeImg":[
+      "images/types/ice.png",
+      "images/types/flying.png"
     ],
     "description": "Articuno es un Pokémon pájaro legendario que puede controlar el hielo. El batir de sus alas congela el aire. Dicen que consigue hacer que nieve cuando vuela.",
     "height": "1.70 m",
@@ -4249,6 +4838,12 @@ var POKEMON = {
       "Electric",
       "Rock",
       "Steel"
+    ],
+    "weaknessesImg":[
+      "images/types/fire.png",
+      "images/types/electric.png",
+      "images/types/rock.png",
+      "images/types/steel.png"
     ]
   },
   {
@@ -4259,6 +4854,10 @@ var POKEMON = {
     "type": [
       "Electric",
       "Flying"
+    ],
+    "typeImg":[
+      "images/types/electric.png",
+      "images/types/flying.png"
     ],
     "description": "Zapdos es un Pokémon pájaro legendario que tiene la habilidad de controlar la electricidad. Suele vivir en nubarrones. Este Pokémon gana mucha fuerza si le alcanzan los rayos.",
     "height": "1.60 m",
@@ -4272,6 +4871,10 @@ var POKEMON = {
     "weaknesses": [
       "Ice",
       "Rock"
+    ],
+    "weaknessesImg":[
+      "images/types/ice.png",
+      "images/types/rock.png"
     ]
   },
   {
@@ -4282,6 +4885,10 @@ var POKEMON = {
     "type": [
       "Fire",
       "Flying"
+    ],
+    "typeImg":[
+      "images/types/fire.png",
+      "images/types/flying.png"
     ],
     "description": "Moltres es un Pokémon pájaro legendario que tiene la habilidad de controlar el fuego. Dicen que, si resulta herido, se sumerge en el líquido magma de un volcán para arder y curarse.",
     "height": "2.01 m",
@@ -4296,6 +4903,11 @@ var POKEMON = {
       "Water",
       "Electric",
       "Rock"
+    ],
+    "weaknessesImg":[
+      "images/types/water.png",
+      "images/types/electric.png",
+      "images/types/rock.png"
     ]
   },
   {
@@ -4305,6 +4917,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/147.png",
     "type": [
       "Dragon"
+    ],
+    "typeImg":[
+      "images/types/dragon.png"
     ],
     "description": "Dratini muda y se despoja de la vieja piel continuamente. Es algo que necesita hacer porque la energía que tiene en su interior no para de alcanzar niveles incontrolables.",
     "height": "1.80 m",
@@ -4323,6 +4938,11 @@ var POKEMON = {
       "Ice",
       "Dragon",
       "Fairy"
+    ],
+    "weaknessesImg":[
+      "images/types/ice.png",
+      "images/types/dragon.png",
+      "images/types/fairy.png"
     ],
     "next_evolution": [
       {
@@ -4343,6 +4963,9 @@ var POKEMON = {
     "type": [
       "Dragon"
     ],
+    "typeImg":[
+      "images/types/dragon.png"
+    ],
     "description": "Dragonair acumula grandes cantidades de energía dentro de sí. Dicen que altera el clima de la zona en la que está descargando energía a través de las esferas de cristal que tiene en el cuello y en la cola.",
     "height": "3.99 m",
     "weight": "16.5 kg",
@@ -4359,6 +4982,11 @@ var POKEMON = {
       "Ice",
       "Dragon",
       "Fairy"
+    ],
+    "weaknessesImg":[
+      "images/types/ice.png",
+      "images/types/dragon.png",
+      "images/types/fairy.png"
     ],
     "prev_evolution": [
       {
@@ -4382,6 +5010,10 @@ var POKEMON = {
       "Dragon",
       "Flying"
     ],
+    "typeImg":[
+      "images/types/dragon.png",
+      "images/types/flying.png"
+    ],
     "description": "Dragonite es capaz de dar la vuelta al mundo en solo 16 horas. Es un Pokémon de buen corazón que guía hasta tierra a los barcos que se encuentran perdidos en plena tormenta y a punto de zozobrar.",
     "height": "2.21 m",
     "weight": "210.0 kg",
@@ -4396,6 +5028,12 @@ var POKEMON = {
       "Rock",
       "Dragon",
       "Fairy"
+    ],
+    "weaknessesImg":[
+      "images/types/ice.png",
+      "images/types/rock.png",
+      "images/types/dragon.png",
+      "images/types/fairy.png"
     ],
     "prev_evolution": [
       {
@@ -4416,6 +5054,9 @@ var POKEMON = {
     "type": [
       "Psychic"
     ],
+    "typeImg":[
+      "images/types/psychic.png"
+    ],
     "description": "Mewtwo fue creado por manipulación genética. Pero, a pesar de que el hombre creó su cuerpo, dotar a Mewtwo de un corazón compasivo quedó en el olvido.",
     "height": "2.01 m",
     "weight": "122.0 kg",
@@ -4429,6 +5070,11 @@ var POKEMON = {
       "Bug",
       "Ghost",
       "Dark"
+    ],
+    "weaknessesImg":[
+      "images/types/bug.png",
+      "images/types/ghost.png",
+      "images/types/dark.png"
     ]
   },
   {
@@ -4438,6 +5084,9 @@ var POKEMON = {
     "img": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
     "type": [
       "Psychic"
+    ],
+    "typeImg":[
+      "images/types/psychic.png"
     ],
     "description": "Dicen que Mew posee el mapa genético de todos los Pokémon. Puede hacerse invisible cuando quiere, así que pasa desapercibido cada vez que se le acerca alguien.",
     "height": "0.41 m",
@@ -4452,6 +5101,11 @@ var POKEMON = {
       "Bug",
       "Ghost",
       "Dark"
+    ],
+    "weaknessesImg":[
+      "images/types/bug.png",
+      "images/types/dark.png",
+      "images/types/ghost.png"
     ]
   }
 ]

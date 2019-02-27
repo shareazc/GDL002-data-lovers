@@ -1,12 +1,20 @@
-
+// Abrir y cerrar nav bar
 document.getElementById("openBtn").addEventListener("click", openNav = () => { 
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "150px";
 });
 
 document.getElementById("closeBtn").addEventListener("click", closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
 });
 
+// Abrir submenús hijodeputa
+document.getElementById("typeBtn").addEventListener("click", openSubMenu = () => {
+    document.getElementById("typeMenu").classList.toggle("show")
+})
+
+document.getElementById("weakBtn").addEventListener("click", openSubMenu = () => {
+    document.getElementById("weakMenu").classList.toggle("show")
+})
 
 // Búsqueda y filtrado 
 
@@ -63,7 +71,7 @@ let showInfo = () => { //Mostrar datos del pokemon
 
 
 // EVENT LISTENERS
-//document.getElementById("searchButton").addEventListener("click",findPokemon); //Llamar al botón BUSCAR
+document.getElementById("searchButton").addEventListener("click",findPokemon); //Llamar al botón BUSCAR
 
 
 

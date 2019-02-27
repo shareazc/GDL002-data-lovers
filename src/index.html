@@ -15,26 +15,70 @@
       <input type="checkbox" checked>
       <div class="curtain__panel curtain__panel--left"> </div>
       <!-- Pantalla de Inicio -->
-      <div class="start__screen">
+      <div class="home__screen">
         <header>
         <div class = "topNav">
           <!-- Contenido slide menu -->
-          <div id = "mySidenav" class = "sidenav">
-          <a href="javascript:void(0)" class="closebtn" id = "closeBtn" > &times; </a>
-          <a href = "#">Tipo</a> 
-          <a href = "#"> Debilidad </a>
-          <a href = "#"> Lista completa </a>
+          <div id = "mySidenav" class = "sidenav"> 
+            <a href="javascript:void(0)" class="closebtn" id = "closeBtn"> &times; </a>
+            <button class="dropdown-btn" id="typeBtn"> Tipo </button>
+            <!-- Submenu de tipo --> 
+                <nav id="typeMenu">
+                  <ul class="subMenu">
+                    <li><button class="subm" id ="typeNormal">Normal</button></li>
+                    <li><button class="subm" id="typeFighting">Fighting</button></li>
+                    <li><button class="subm" id="typeFlying">Flying</button></li>
+                    <li><button class="subm" id="typePoison">Poison</button></li>
+                    <li><button class="subm" id="typeGround">Ground</button></li>
+                    <li><button class="subm" id="typeRock">Rock</button></li>
+                    <li><button class="subm" id="typeBug">Bug</button></li>
+                    <li><button class="subm" id="typeGhost">Ghost</button></li>
+                    <li><button class="subm" id="typeSteel">Steel</button></li>
+                    <li><button class="subm" id="typeFire">Fire</button></li>
+                    <li><button class="subm" id="typeWater">Water</button></li>
+                    <li><button class="subm" id="typeElectric">Electric</button></li>
+                    <li><button class="subm" id="typePsychic">Psychic</button></li>
+                    <li><button class="subm" id="typeIce">Ice</button></li>
+                    <li><button class="subm" id="typeDragon">Dragon</button></li>
+                    <li><button class="subm" id="typeFairy">Fairy</button></li>
+                    <li><button class="subm" id="typeDark">Dark</button></li>
+                  </ul>
+                </nav>
+            <button class="dropdown-btn" id="weakBtn"> Debilidad </button> 
+            <!-- Submenu de debilidades -->
+              <nav id="weakMenu">
+                  <ul class="subMenu">
+                    <li><button class="subm" id ="weakNormal">Normal</button></li>
+                    <li><button class="subm" id="weakFighting">Fighting</button></li>
+                    <li><button class="subm" id="weakFlying">Flying</button></li>
+                    <li><button class="subm" id="weakPoison">Poison</button></li>
+                    <li><button class="subm" id="weakGround">Ground</button></li>
+                    <li><button class="subm" id="weakRock">Rock</button></li>
+                    <li><button class="subm" id="weakBug">Bug</button></li>
+                    <li><button class="subm" id="weakGhost">Ghost</button></li>
+                    <li><button class="subm" id="weakSteel">Steel</button></li>
+                    <li><button class="subm" id="weakFire">Fire</button></li>
+                    <li><button class="subm" id="weakWater">Water</button></li>
+                    <li><button class="subm" id="weakElectric">Electric</button></li>
+                    <li><button class="subm" id="weakPsychic">Psychic</button></li>
+                    <li><button class="subm" id="weakIce">Ice</button></li>
+                    <li><button class="subm" id="weakDragon">Dragon</button></li>
+                    <li><button class="subm" id="weakFairy">Fairy</button></li>
+                    <li><button class="subm" id="weakDark">Dark</button></li>
+                  </ul>
+                </nav>
+            <button class="dropdown-btn" id="fullList"> Lista completa </button>
           </div>
-          <!-- Muestra barra nav-->
-          <span style="font-size:30px;cursor:pointer" id="openBtn"> &#9776; Avanzada </span>
+          <!-- Muestra barra nav -->
+          <span style="font-size:30px;cursor:pointer" class="openbtn" id="openBtn"> &#9776; </span>
           <!-- Barra de búsqueda -->
           <input type="text" class="menuItems" placeholder=" # o Número" id="searchBar">
           <input type="button" value="Buscar" class="menuItems" id="searchButton">
-        </div>
-        </header> <!-- Fin barra nav-->
+          </div>
+        </header> 
+<!-- FIN BARRA DE NAVEGACIÓN -->
         
-      
-
+        
 
          <div class="pokemonInfo">
             <figure>
@@ -74,10 +118,10 @@
       
             <label for="timeSpawnSpan">Tiempo de aparición: </label>
             <span class="pokemonInfo" id="timeSpawn" name="timeSpawnSpan"></span>
-      
+            <br>
             <label for="kmEggSpan">Distancia para eclosión de huevo: </label>
             <span class="pokemonInfo" id="kmEgg" name="kmEggSpan"></span>
-      
+            <br>
             <label for="candiesNumberSpan">Número de dulces para evolucionar: </label>
             <span class="pokemonInfo" id="candies" name="candiesSpan"></span>
           </div>
