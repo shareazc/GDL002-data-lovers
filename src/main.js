@@ -2,19 +2,40 @@
 document.getElementById("openBtn").addEventListener("click", openNav = () => { 
     document.getElementById("mySidenav").style.width = "150px";
 });
-
 document.getElementById("closeBtn").addEventListener("click", closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
 });
-
-// Abrir submenús hijodeputa
+// Abrir submenus
 document.getElementById("typeBtn").addEventListener("click", openSubMenu = () => {
     document.getElementById("typeMenu").classList.toggle("show")
-})
-
+});
 document.getElementById("weakBtn").addEventListener("click", openSubMenu = () => {
     document.getElementById("weakMenu").classList.toggle("show")
-})
+});
+document.getElementById("orderBtn").addEventListener("click", openSubMenu = () => {
+    document.getElementById("orderMenu").classList.toggle("show")
+});
+
+
+//Filtrar
+const filterPokemon=(data,whatToFilter, valueToCompare) => {
+    return data.filter(pokemon=>{
+        for(let i=0; i<pokemon[whatToFilter].length; i++){
+            if(pokemon[whatToFilter][i]==valueToCompare){
+                return pokemon;
+            }
+        }
+    });
+}
+
+const selectPokemonList = (whichList, property, element) => {
+    if (whichList==="filter") {
+        console.log(filterPokemon(window.POKEMON.pokemon, property, element));
+        return;
+    }
+}
+
+document.getElementById("typeNormal").addEventListener("click", () => selectPokemonList("filter", document.getElementsByClassName("submType"), document.getElementById("typeNormal").value));
 
 // Búsqueda y filtrado 
 

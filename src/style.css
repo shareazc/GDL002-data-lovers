@@ -1,5 +1,6 @@
 html, body {
   font-family: Arial, Helvetica, sans-serif;
+  /* background: #cc0a0a; */
 }
 .curtain {
     width: 100%; 
@@ -58,16 +59,17 @@ html, body {
     }
  
   .home__screen {
- position: absolute; 
+  position: absolute; 
   z-index: 40; 
   width: 100%;
   height: 100%;
+  margin-left:0;
   }
 /* Barra de navegación */
 .topNav {
   overflow: hidden;
   background-color: #e9e9e9;
-  margin-right:14px;
+  margin-right:17px;
 }
 /* Barra de búsqueda */
 .topNav input[type=text] {
@@ -113,15 +115,21 @@ html, body {
     outline: none;
     transition: 0.3s;
   } 
-  .sidenav a:hover, .dropdown-btn:focus {
-    color: #f1f1f1; 
+
+  .dropdown-btn:hover {
+    background: rgb(77, 77, 126);
   }
-/* Submenu hijo de puta */
+
+  .sidenav a:hover, .dropdown-btn:focus, {
+    color: #f1f1f1; 
+    background: rgb(77, 77, 126);
+  }
+/* Submenu cerrado */
 nav {
   position: absolute;
   left: -100px;
 }
-nav.show { /* Submenú abierto */
+nav.show { /* Submenu abierto */
   background: #cc0a0a;
   left:0;
   width: 100%;
@@ -150,9 +158,20 @@ nav.show { /* Submenú abierto */
     margin-left: 10px;
 } 
 
+/* Flex */
+.container {
+  /* background-color: #cc0a0a; */
+  width:100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
 
-
-
+.pokemonImg { 
+  flex: 1 1 auto;
+  max-width: 250px;
+  justify-content: center;
+}
  
 
 /* ACTUALIZACION MEL
