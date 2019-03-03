@@ -6,15 +6,40 @@ document.getElementById("closeBtn").addEventListener("click", closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
 });
 // Abrir submenus
-document.getElementById("typeBtn").addEventListener("click", openSubMenu = () => {
-    document.getElementById("typeMenu").classList.toggle("show")
-});
-document.getElementById("weakBtn").addEventListener("click", openSubMenu = () => {
-    document.getElementById("weakMenu").classList.toggle("show")
-});
-document.getElementById("orderBtn").addEventListener("click", openSubMenu = () => {
-    document.getElementById("orderMenu").classList.toggle("show")
-});
+ document.getElementById("typeBtn").addEventListener("click", openSubMenu = () => {
+     document.getElementById("typeMenu").classList.toggle("show")
+ });
+ document.getElementById("weakBtn").addEventListener("click", openSubMenu = () => {
+     document.getElementById("weakMenu").classList.toggle("show")
+ });
+ document.getElementById("orderBtn").addEventListener("click", openSubMenu = () => {
+     document.getElementById("orderMenu").classList.toggle("show")
+ });
+
+// // Abrir solo un submenu a la vez
+//  const showAndHide = (a,b,c) => {
+//    const elementA = document.getElementById(a);
+//    const elementB = document.getElementById(b);
+//    const elementC = document.getElementById(c);
+ 
+//     elementB.style.display=“none”;
+//     elementC.style.display=“none”;
+ 
+//         if (elementA.style.display===“none”){
+//             elementA.style.display = “block”;
+//         } else {
+//             elementA.style.display=“none”;
+//         }
+//  };
+//  document.getElementById(“typeBtn”).addEventListener(“click”, () => {
+//     showAndHide (“typeMenu”, “weakMenu”, “orderMenu”);
+//  } );
+//  document.getElementById(“weakBtn”).addEventListener(“click”, () => {
+//     showAndHide (“weakMenu”, “typeMenu”, “orderMenu”);
+//  } );
+//  document.getElementById(“orderBtn”).addEventListener(“click”, () => {
+//     showAndHide (“orderMenu”, “typeMenu”, “weakMenu”);
+//  } );
 
 
 //Filtrar
@@ -87,14 +112,11 @@ let showInfo = () => { //Mostrar datos del pokemon
     document.getElementById("timeSpawn").innerHTML = pokemonObject.spawn_time;
     document.getElementById("kmEgg").innerHTML = pokemonObject.egg;
     document.getElementById("candies").innerHTML = pokemonObject.candy_count;
-
-}
+};
 
 
 // EVENT LISTENERS
 document.getElementById("searchButton").addEventListener("click",findPokemon); //Llamar al botón BUSCAR
-
-
 
 /*const printPokemon = (itemToPrint) => {
     document.getElementsByClassName("pokemonInfo").innerHTML = itemToPrint;
@@ -119,5 +141,4 @@ const getName = () => {
 }
 
 // EVENT LISTENERS
-document.getElementById('searchButton').addEventListener('click',findPokemon); //Llamar al botón BUSCAR */
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+//document.getElementById('searchButton').addEventListener('click',findPokemon); //Llamar al botón BUSCAR */ 
