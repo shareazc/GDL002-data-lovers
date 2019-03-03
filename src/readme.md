@@ -74,6 +74,7 @@ Una vez que hemos elegido un Pokémon en específico, se presenta la siguiente i
 <img src="images/PokedexHighFidelity-03.png" height="500"> <img src="images/PokedexHighFidelity-04.png" height="500"> 
 
 
+
 ### Cambios de interfaz
 
 Al principio pensamos en una interfaz similar a la primera Pokédex, tomando como referencia la que salía en la primera serie animada, sin embargo después nos decidimos por un estilo más minimalista con algunos elementos retro a fin de llegar a un punto medio entre los usuarios que pueden ser jóvenes y los adultos.
