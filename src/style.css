@@ -1,199 +1,188 @@
-html, body {
-  font-family: Arial, Helvetica, sans-serif;
-  /* background: #cc0a0a; */
+*{
+  font-family: 'Share Tech Mono', monospace;
 }
-.curtain {
-    width: 100%; 
-    height: 100vh; 
-    overflow: hidden;
+/* Display screens */
+#divMaxCP{
+  display: none;
 }
-  .curtain__wrapper {
-   width: 100%; 
-    height: 100%; 
-    z-index: 40; 
-    margin-left:0;
-  }
-  input[type=checkbox] {
-      position: absolute; 
-      cursor: pointer; 
-      width: 90%; 
-      height: 100%;
-      z-index: 60; 
-      opacity: 0;
-  }
-  /* No permite segundo click */
-  input[type=checkbox]:not(:checked){
-   pointer-events: none;
-  } 
-    
-  /* Paneles cerrados */
-  input[type=checkbox]:checked ~ div.curtain__panel--left {
-        transform: translateX(0);
-  }        
-  input[type=checkbox]:checked ~ div.curtain__panel--right {
-        transform: translateX(0);
-  }     
-    .curtain__panel {
-        background: #cc0a0a;
-        width: 100%; 
-        height: 50%; 
-        float: left; 
-        position: relative; 
-        z-index: 50; 
-        transition: all 1s ease-out;
-    }
-    /* Paneles abiertos */
-    .curtain__panel--left {
-          background-image: url("https://i.imgur.com/oDmJHew.png");
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center bottom;
-          margin-top: 0; 
-        transform: translateY(-101%);
-    }
-    .curtain__panel--right {
-          background-image: url("https://i.imgur.com/hQ7UIub.png");
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center top;
-          margin-bottom: 0;
-        transform: translateY(100%);
-    }
- 
-
-.home__screen {
-  position: absolute; 
-  z-index: 40; 
-  width: 100%;
-  height: 100%;
-  margin-left:0;
-  }
-/* Barra de navegación */
+#pokemonCard{
+  display: none;
+}
+/* LISTS */
+#pokemonList{
+  display: flex;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.boxWrapper2{ /* Ordena lista filtrada en mobile*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 25%;
+  float: left;
+  /* margin-left:auto;
+  margin-right:auto; */
+  margin: 10px;
+}
+.listPokeImg{
+  flex-wrap: wrap;
+}
+#pokemonCard{
+  display: none;
+}
+/* LISTS */
+#pokemonList{
+  display: flex;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.boxWrapper2{ /* Minimiza formato de listas filtradas */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 25%;
+  float: left;
+  margin: 10px;
+}
+.listPokeImg{
+  flex-wrap: wrap;
+}
+.listLabels{
+  flex-wrap: wrap;
+}
+/* Top Nav Bar */
 .topNav {
   overflow: hidden;
-  background-color: #e9e9e9;
-  margin-right:-15px; 
+  background-color: #fb0505;
+  /* margin-right:14px; */
 }
-/* Barra de búsqueda */
-.topNav input[type=text] {
-  float: right;
-  padding: 6px; 
-  border: none;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-right: 8px;
-  font-size: 12px;
-}
-.topNav input[type=button] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  font-size: 12px;
-}
-/* Menu lateral */
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 30;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-  }
-  .sidenav a, .dropdown-btn { /* Opciones de búsqueda */
-    padding: 6px 8px 6px 16px;
-    font-size: 18px;
-    color: #818181;
-    display: block;
+ /* Search Bar */
+  .topNav input[type=text] {
+    float: right;
+    padding: 6px; 
     border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    transition: 0.3s;
-  } 
-  .dropdown-btn:hover {
-    background: rgb(77, 77, 126);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    font-size: 12px;
   }
-  .sidenav a:hover, .dropdown-btn:focus {
-    color: #f1f1f1; 
-    background: rgb(77, 77, 126);
+  .topNav input[type=button] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 12px;
   }
-/* Submenu cerrado */
-nav {
-  position: absolute;
-  left: -100px;
-}
-nav.show { /* Submenu abierto */
-  background: #cc0a0a;
-  left:0;
-  width: 100%;
-}
 
-/* Bloquear pantallas por defecto */
-/* #pokemonCard {
-  display: none;
+/* Slide side menu */
+ .sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 30;
+     top: 0;
+     left: 0;
+     background-color: #111;
+     overflow-x: hidden;
+     overflow-y: visible;
+     padding-top: 60px;
+     transition: 0.5s;
+   }
+   /* Side menu SUBMENUS */
+   .sidenav a{ 
+     padding: 6px 8px 6px 16px;
+     font-size: 18px;
+     color: #818181;
+     display: block;
+     border: none;
+     background: none;
+     width: 100%;
+     text-align: left;
+     cursor: pointer;
+     outline: none;
+     transition: 0.3s;
+   } 
+   .sidenav{
+      display: block;
+   }
+   .dropdown-btn{
+      padding: 6px 8px 6px 16px;
+     font-size: 18px;
+     color: #818181;
+     display: block;
+     border: none;
+     background: none;
+     width: 100%;
+     text-align: left;
+     cursor: pointer;
+     outline: none;
+     transition: 0.3s;
+   }
+
+   .dropdown-btn:hover {
+      background:#cc0a0a;
+      color: white;
+   }
+   .sidenav a:hover, .dropdown-btn:focus {
+     color: #f1f1f1; 
+   }
+   .subMenu, .subm {
+     margin-left: 10px;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     font-size: 13px;
+     color: #f1f1f1; 
+     text-align: left;
+     list-style: none;
+     padding: 0;
+     border: none;
+     background: none;
+     width: 100%;
+   }  
+ .sidenav .closebtn {
+     position: absolute;
+     top: 0; 
+     right: 25;  
+     font-size: 36px;
+     margin-left: 100px;
+   } 
+   .openbtn {
+     margin-left: 10px;
+     margin-top: 10px;
+     padding-top: 10px;
+    }
+/* END TOP NAV BAR AND SIDE MENU */
+
+/* Order function screens */
+.listLabels{
+  flex-wrap: wrap;
 }
-
-#pokemonList {
-  display: none;
-}
-
-#divMaxCP {
-  display: none;
-} */
-
-/* Submenus cerrados por defecto */
-/* para función de cerrar submenu al abrir otro */
-/* #typeMenu{ 
+#typeMenu{
   display: none;
 }
 #weakMenu{
-   display: none;
+  display: none;
 }
 #orderMenu{
   display: none;
-} */
-
-  .subMenu, .subm {
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 13px;
-    color: #f1f1f1; 
-    text-align: left;
-    list-style: none;
-    padding: 0;
-    border: none;
-    background: none;
-    width: 100%;
-  }  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0; 
-    right: 25;  
-    font-size: 36px;
-    margin-left: 100px;
-  } 
-  .openbtn {
-    margin-left: 10px;
-    cursor: pointer;
-    font-size:30px;
 }
-/* Grid */
+
+.pokemonImg{
+  z-index: 10;
+  width: 40%;
+  height: 40%; 
+}
+ 
+.listPokeImg{
+  width: 40%;
+  height: 40%; 
+}
+
 .wrapper {
-  /* position: absolute; 
-  z-index: 40; 
-  width: 100%;
-  height: 100%;
-  margin-left:0; */
-  display:grid; 
+  display:grid;
   grid-gap:1em;
   grid-auto-rows: minmax(100px, auto);
   grid-template-columns: 3fr 1fr 2fr;
@@ -206,32 +195,15 @@ nav.show { /* Submenu abierto */
   padding: 1em;
   text-align: center;
   vertical-align: middle;
-  object-fit: contain;
 }
 
 .wrapper > div:nth-child(odd) {
   background: #ddd;
 }
 
-/* Child components */
- 
 .box1 { /* Imagen */
   grid-column: 1/2;
   grid-row: 1/4;
-}
-
-/* XS devices, =< 600px */
-@media only screen and (max-width:600px) {
-  .pokemonImg {
-    max-width: 150px;
-  }
-  .box1 {
-    max-width:200px;
-    max-height: 150px;
-  }
-  .topNav {
-    margin-right: 15px;
-  }
 }
 
 .box2 { /* Numero & Nombre */
@@ -269,62 +241,12 @@ grid-column: 3/4;
 grid-row: 6/7;
 }
 
-/* .pokemonImg { 
-  flex: 1 1 auto;
-  max-width: 250px;
-  justify-content: center;
+/* Se comentó 04/03 y no se observaron cambios */
+/* .wrapper2{
+  display: grid;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 3fr 1fr 2fr;
+  grid-template-rows: repeat(7, 1fr);
+  padding: 1em;
 } */
-
-
-/* ACTUALIZACION MEL
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-    color: black;
-    margin: 0;
-    padding: 0;
-}
-
-.container{
-    background-color: #fb0505;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    height: 100vh;
-    margin: auto;
-    overflow: initial;
-    display: flex;
-    flex-direction: column;
-}
-
-.navigationMenu{
-    position: -webkit-sticky;
-
-    position: sticky;
-    top: 0;
-    background: url(images/navigation-bar.png) no-repeat;
-    width: 90vw;
-    max-width: 90vw;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.pictureScreen{
-    //background: url(images/picture-screen.png) no-repeat;
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-}
-
-.pokemonInfo{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 10%;
-    padding-top: 5%;
-}
