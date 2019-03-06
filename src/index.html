@@ -1,154 +1,192 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <title>Pokédex Go!</title>
-   <link rel="stylesheet" href="style.css" />
- </head>
- <body>
-   <div id="root"></div>
-   <!-- Cortinillas -->
-  <div class="curtain">
-    <div class="curtain__wrapper">
-      <!-- Checkbox alv -->
-      <input type="checkbox" checked>
-      <div class="curtain__panel curtain__panel--left"> </div>
-      <!-- Pantalla de Inicio -->
-      <div class="home__screen">
-        <header>
-        <div class = "topNav">
-          <!-- Contenido slide menu -->
-          <div id = "mySidenav" class = "sidenav"> 
-            <a href="javascript:void(0)" class="closebtn" id = "closeBtn"> &times; </a>
-            <button class="dropdown-btn" id="typeBtn"> Tipo </button>
-            <!-- Submenu de tipo --> 
-                <nav id="typeMenu">
-                  <ul class="subMenu">
-                    <li><input type="button" value="Normal" class="subm" id ="typeNormal"></li>
-                    <li><input type="button" value="Fighting" class="subm" id="typeFighting"></li>
-                    <li><input type="button" value="Flying"class="subm" id="typeFlying"></li>
-                    <li><input type="button" value="Poison" class="subm" id="typePoison"></li>
-                    <li><input type="button" value="Ground" class="subm" id="typeGround"></li>
-                    <li><input type="button" value="Rock" class="subm" id="typeRock"></li>
-                    <li><input type="button" value="Bug" class="subm" id="typeBug"></li>
-                    <li><input type="button" value="Ghost" class="subm" id="typeGhost"></li>
-                    <li><input type="button" value="Steel" class="subm" id="typeSteel"></li>
-                    <li><input type="button" value="Fire" class="subm" id="typeFire"></li>
-                    <li><input type="button" value="Water" class="subm" id="typeWater"></li>
-                    <li><input type="button" value="Electric" class="subm" id="typeElectric"></li>
-                    <li><input type="button" value="Psychic" class="subm" id="typePsychic"></li>
-                    <li><input type="button" value="Ice" class="subm" id="typeIce"></li>
-                    <li><input type="button" value="Dragon" class="subm" id="typeDragon"></li>
-                    <li><input type="button" value="Fairy" class="subm" id="typeFairy"></li>
-                    <li><input type="button" value="Dark" class="subm" id="typeDark"></li>
-                  </ul>
-                </nav>
-            <button class="dropdown-btn" id="weakBtn"> Debilidad </button> 
-            <!-- Submenu de debilidades -->
-              <nav id="weakMenu">
-                  <ul class="subMenu">
-                    <li><input type="button" value="Normal" class="subm" id ="weakNormal"></li>
-                    <li><input type="button" value="Fighting" class="subm" id="weakFighting"></li>
-                    <li><input type="button" value="Flying" class="subm" id="weakFlying"></li>
-                    <li><input type="button" value="Poison" class="subm" id="weakPoison"></li>
-                    <li><input type="button" value="Ground" class="subm" id="weakGround"></li>
-                    <li><input type="button" value="Rock" class="subm" id="weakRock"></li>
-                    <li><input type="button" value="Bug" class="subm" id="weakBug"></li>
-                    <li><input type="button" value="Ghost" class="subm" id="weakGhost"></li>
-                    <li><input type="button" value="Steel" class="subm" id="weakSteel"></li>
-                    <li><input type="button" value="Fire" class="subm" id="weakFire"></li>
-                    <li><input type="button" value="Water" class="subm" id="weakWater"></li>
-                    <li><input type="button" value="Electric" class="subm" id="weakElectric"></li>
-                    <li><input type="button" value="Psychic" class="subm" id="weakPsychic"></li>
-                    <li><input type="button" value="Ice" class="subm" id="weakIce"></li>
-                    <li><input type="button" value="Dragon" class="subm" id="weakDragon"></li>
-                    <li><input type="button" value="Fairy" class="subm" id="weakFairy"></li>
-                    <li><input type="button" value="Dark" class="subm" id="weakDark"></li>
-                  </ul>
-                </nav>
-            <button class="dropdown-btn" id="orderBtn"> Ordenar </button>
-            <!-- Submenu para ordenar -->
-            <nav id="orderMenu">
-              <ul class="subMenu">
-                <li>Nombre</li>
-                <li><button class="subm" id="orderAZ">A - Z</button></li>
-                <li><button class="subm" id="orderZA">Z - A</button></li>
-                <li>Número</li>
-                <li><button class="subm" id="order1">1 - 151</button></li>
-                <li><button class="subm" id="order151">151 - 1</button></li>
-              </ul>
-            </nav>
-          </div>
-          <!-- Muestra barra nav -->
-          <span class="openbtn" id="openBtn"> &#9776; </span>
-          <!-- Barra de búsqueda -->
-          <input type="text" class="menuItems" placeholder=" # o Número" id="searchBar">
-          <input type="button" value="Buscar" class="menuItems" id="searchButton">
-          </div>
-        </header> 
-<!-- FIN BARRA DE NAVEGACIÓN -->
-          <!-- Grid -->
-          <div class="wrapper">
-            <div class="pokemonInfo box1"> <!-- Box 1 Imagen -->
-              <figure>
-                <img src="" class="pokemonImg" id="pokemonPicture">
-              </figure>
-            </div>
-        
-            <div class="pokemonInfo box2"> <!-- Box 2 Nombre & número -->
-              <p><span class="pokemonNumber" id="pokeNum"></span></p>
-              <span class="pokemonName" id="pokeName"></span>
-            </div>
-        
-            <div class="pokemonInfo box3"> <!-- Box 2 Type -->
-              <p><label for="pokemonTypeSpan">Tipo: </label></p>
-              <span class="pokemonTypes" id="pokeType" name="pokemonTypeSpan"></span>
-            </div>
-        
-            <div class="pokemonInfo box4"> <!-- Box 4 Evoluciones -->
-              <p><label for="pokemonEvolutionSpan">Evoluciones: </label></p>
-              <span class="pokemonEvolutions" id="pokeEvolution" name="pokemonEvolutionSpan"></span>
-            </div>
-        
-            <div class="pokemonInfo box5"> <!-- Box 5 Descripción -->
-              <p><label for="pokeDescriptionSpan">Descripción: </label></p>
-              <span class="pokemonDescription" id="pokeDescription" name="pokemonDescriptionSpan"></span>
-            </div>
-        
-            <div class="pokemonInfo box6"> <!-- Box 6 Debilidades -->
-              <p><label for="pokemonWeaknessesSpan">Debilidades: </label></p>
-              <span class="pokemonWeaknesses" id="pokeWeaknesses" name="pokemonWeaknessesSpan"></span>
-            </div>
-        
-            <div class="pokemonInfo box7"> <!-- Box 7 Freq, Apparition Time, Eggs, Candies -->
-              <p>Información de juego: </p>
-              <label for="frequencySpawnSpan">Frecuencia de aparición: </label>
-              <span class="pokemonInfo" id="frequencySpawn" name="frequencySpawnSpan"></span>
-              <label for="timeSpawnSpan">Tiempo de aparición: </label>
-              <span class="pokemonInfo" id="timeSpawn" name="timeSpawnSpan"></span>
-              <br>
-              <label for="kmEggSpan">Distancia para eclosión de huevo: </label>
-              <span class="pokemonInfo" id="kmEgg" name="kmEggSpan"></span>
-              <br>
-              <label for="candiesNumberSpan">Número de dulces para evolucionar: </label>
-              <span class="pokemonInfo" id="candies" name="candiesSpan"></span>
-            </div>
 
-            <div class="pokemonInfo box8"> <!-- Box 8 Calculador -->
-              <span class="pokemonGameInfo" id="calc" name="calculator"></span>
-            </div>
-        
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0">
+  <title>Pokédex Go!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+</head>
 
-          <footer class="footer"> Creado por Mel y Share :)</footer>
+<body>
+  <div id="root"></div>
+  <header>
+    <div class="topNav">
+      <!-- Shows top navigation bar -->
+      <span style="font-size:30px;cursor:pointer" class="openbtn" id="openBtn"> <img src="images/blue-btn.gif"></span>
+      <!-- Search bar -->
+      <input type="text" class="menuItems" placeholder=" # o Número" id="searchBar">
+      <input type="button" value="Buscar" class="menuItems" id="searchButton">
+      <!-- Sidenav menu Content -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closeBtn"> &times; </a>
+        <button class="dropdown-btn" id="typeBtn"> Tipo </button>
+        <!-- Type submenu -->
+        <nav id="typeMenu">
+          <ul class="subMenu" id="submType">
+            <li><input type="button" value="Normal" class="subm" id="typeNormal"></li>
+            <li><input type="button" value="Fighting" class="subm" id="typeFighting"></li>
+            <li><input type="button" value="Flying" class="subm" id="typeFlying"></li>
+            <li><input type="button" value="Poison" class="subm" id="typePoison"></li>
+            <li><input type="button" value="Ground" class="subm" id="typeGround"></li>
+            <li><input type="button" value="Rock" class="subm" id="typeRock"></li>
+            <li><input type="button" value="Bug" class="subm" id="typeBug"></li>
+            <li><input type="button" value="Ghost" class="subm" id="typeGhost"></li>
+            <li><input type="button" value="Steel" class="subm" id="typeSteel"></li>
+            <li><input type="button" value="Fire" class="subm" id="typeFire"></li>
+            <li><input type="button" value="Water" class="subm" id="typeWater"></li>
+            <li><input type="button" value="Electric" class="subm" id="typeElectric"></li>
+            <li><input type="button" value="Psychic" class="subm" id="typePsychic"></li>
+            <li><input type="button" value="Ice" class="subm" id="typeIce"></li>
+            <li><input type="button" value="Dragon" class="subm" id="typeDragon"></li>
+            <li><input type="button" value="Fairy" class="subm" id="typeFairy"></li>
+            <li><input type="button" value="Dark" class="subm" id="typeDark"></li>
+          </ul>
+        </nav>
+        <button class="dropdown-btn" id="weakBtn"> Debilidad </button>
+        <!-- Weaknesses submenu -->
+        <nav id="weakMenu">
+          <ul class="subMenu" id="submWeak">
+            <li><input type="button" value="Normal" class="subm" id="weakNormal"></li>
+            <li><input type="button" value="Fighting" class="subm" id="weakFighting"></li>
+            <li><input type="button" value="Flying" class="subm" id="weakFlying"></li>
+            <li><input type="button" value="Poison" class="subm" id="weakPoison"></li>
+            <li><input type="button" value="Ground" class="subm" id="weakGround"></li>
+            <li><input type="button" value="Rock" class="subm" id="weakRock"></li>
+            <li><input type="button" value="Bug" class="subm" id="weakBug"></li>
+            <li><input type="button" value="Ghost" class="subm" id="weakGhost"></li>
+            <li><input type="button" value="Steel" class="subm" id="weakSteel"></li>
+            <li><input type="button" value="Fire" class="subm" id="weakFire"></li>
+            <li><input type="button" value="Water" class="subm" id="weakWater"></li>
+            <li><input type="button" value="Electric" class="subm" id="weakElectric"></li>
+            <li><input type="button" value="Psychic" class="subm" id="weakPsychic"></li>
+            <li><input type="button" value="Ice" class="subm" id="weakIce"></li>
+            <li><input type="button" value="Dragon" class="subm" id="weakDragon"></li>
+            <li><input type="button" value="Fairy" class="subm" id="weakFairy"></li>
+            <li><input type="button" value="Dark" class="subm" id="weakDark"></li>
+          </ul>
+        </nav>
+        <button class="dropdown-btn" id="orderBtn"> Ordenar </button>
+        <!-- Order submenu -->
+        <nav id="orderMenu">
+          <ul class="subMenu" id="submOrder">
+            <li>Nombre</li>
+            <li><button class="subm" id="orderAZ">A - Z</button></li>
+            <li><button class="subm" id="orderZA">Z - A</button></li>
+            <li>Número</li>
+            <li><button class="subm" id="order1">1 - 151</button></li>
+            <li><button class="subm" id="order151">151 - 1</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!------ END TOP NAV BAR & SIDE NAV MENU ------>
+  <div id="pokemonCard" class="wrapper">
+    <div class="pokemonInfo box1 cardImg">
+      <figure>
+        <img class="pokemonImg" id="pokemonPicture">
+      </figure>
+    </div>
+
+    <div class="pokemonInfo box2">
+      <span class="pokemonNumber" id="pokeNum"></span>
+      <span class="pokemonName" id="pokeName"></span>
+    </div>
+
+    <div class="pokemonInfo box3" id="divType">
+      <label for="pokemonTypeSpan">Tipo: </label>
+      <span class="pokemonTypes" id="pokeType" name="pokemonTypeSpan"></span>
+      <div id="divTypeImg"></div>
+    </div>
+
+    <div class="pokemonInfo box4">
+      <div>
+        <label for="pokemonPreEvolutionSpan">Pre-evoluciones: </label>
+        <span class="pokemonPreEvolutions" id="pokePreEvolution" name="pokemonPreEvolutionSpan"></span>
+      </div>
+      <div>
+        <label for="pokemonEvolutionSpan">Evoluciones: </label>
+        <span class="pokemonEvolutions" id="pokeEvolution" name="pokemonEvolutionSpan"></span>
+      </div>
+    </div>
+
+    <div class="pokemonInfo box5">
+      <div>
+        <label for="pokeHeightSpan">Altura: </label>
+        <span class="pokemonHeight" id="pokeHeight" name="pokemonHeight"></span>
+      </div>
+      <div>
+        <label for="pokeWeightSpan">Peso: </label>
+        <span class="pokemonWeight" id="pokeWeight" name="pokemonWeightSpan"></span>
+      </div>
+      <div>
+        <label for="pokeDescriptionSpan">Descripción: </label>
+        <span class="pokemonDescription" id="pokeDescription" name="pokemonDescriptionSpan"></span>
+      </div>
+    </div>
+
+    <div class="pokemonInfo box6" id="divWeaknesses">
+      <label for="pokemonWeaknessesSpan">Debilidades: </label>
+      <span class="pokemonWeaknesses" id="pokeWeaknesses" name="pokemonWeaknessesSpan"></span>
+      <div id="divWeaknessesImg"></div>
+    </div>
+
+    <div class="pokemonInfo box7">
+      <p>Información de juego: </p>
+      <div class="pokemonGameInfo">
+        <label for="frequencySpawnSpan">Frecuencia de aparición: </label>
+        <span id="frequencySpawn" name="frequencySpawnSpan"></span>
+      </div>
+
+      <div class="pokemonGameInfo">
+        <label for="timeSpawnSpan">Tiempo de aparición: </label>
+        <span id="timeSpawn" name="timeSpawnSpan"></span>
+      </div>
+
+      <div class="pokemonGameInfo">
+        <label for="kmEggSpan">Distancia para eclosión de huevo: </label>
+        <span id="kmEgg" name="kmEggSpan"></span>
+      </div>
+
+      <div class="pokemonGameInfo">
+        <label for="candiesNumberSpan">Número de dulces para evolucionar: </label>
+        <span id="candies" name="candiesSpan"></span>
+      </div>
+    </div>
+
+    <div class="pokemonInfo box8" id="divMaxCP">
+      <label for="inputCP">Ingresa los PC de tu Pokémon: </label>
+      <input type="text" id="idInputCP" name="inputCP" onfocus="this.value=''">
+
+      <input type="button" value="Calcular" id="calculateButton">
+
+      <!-- CP Calculator -->
+      <label id="divCPcalc"></label>
+    </div>
+
+  </div>
+  <!------------------------ POKEMON LIST ---------------------------->
+  <div id="pokemonList" class="wrapper2"></div>
+
+
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <!--
+    <div class = "curtain">
+      <div class = "curtain__wrapper">
+        <input type = "checkbox" checked>
+        <div class = "curtain__panel curtain__panel--left"> 
         </div>
-      </div>  <!-- Home screen -->
-      <div class="curtain__panel curtain__panel--right"> </div> 
-     </div> <!-- curtain__wrapper -->
-  </div> <!-- curtain -->
+        <div class = "curtain__prize"></div> 
+        <div class = "curtain__panel curtain__panel--right">
+        </div> 
+      </div>
+    </div> 
+  -->
+</body>
 
-   <script src="./data/pokemon/pokemon.js"></script>
-   <script src="data.js"></script>
-   <script src="main.js"></script>
- </body>
- </html>
+</html>
