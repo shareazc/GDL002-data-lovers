@@ -346,5 +346,12 @@ document.getElementById("orderBtn").addEventListener("click", () => {
 } );
 
 // ONLOAD random pokemon
-document.getElementById("pokemonCard").addEventListener("load",displayScreen("home"));
+//document.getElementById("pokemonCard").addEventListener("load",displayScreen("home"));
  
+// When checkbox opens panels, call home & remove curtain
+document.getElementById("checkbox").onchange = function () {
+    if (document.getElementById("checkbox").checked === false) {
+        displayScreen("home")
+        document.getElementById("hideDiv").classList.remove("curtain");
+    }
+};

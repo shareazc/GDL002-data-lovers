@@ -1,62 +1,75 @@
 *{
   font-family: 'Share Tech Mono', monospace;
 }
-/* Display screens */
-#divMaxCP{
-  display: none;
+/* Curtains */
+.curtain {
+  width: 100%; 
+  height: 100vh; 
+  overflow: hidden;
 }
-#pokemonCard{
-  display: none;
+  
+.curtain__wrapper {
+  width: 100%;
+  height: 100%;
 }
-/* LISTS */
-#pokemonList{
-  display: flex;
-  display: none;
-  flex-direction: row;
-  justify-content: flex-start;
+
+input[type=checkbox] {
+  position: absolute; 
+  cursor: pointer; 
+  width: 100%; 
+  height: 100%;
+  z-index: 100; 
+  opacity: 0;
 }
-.boxWrapper2{ /* Ordena lista filtrada en mobile*/
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 25%;
-  float: left;
-  /* margin-left:auto;
-  margin-right:auto; */
-  margin: 10px;
+
+/* No permite segundo click */
+input[type=checkbox]:not(:checked) {
+  pointer-events: none;
+} 
+
+/* Paneles cerrados */
+input[type=checkbox]:checked ~ div.curtain__panel--left {
+  transform: translateX(0);
+}        
+input[type=checkbox]:checked ~ div.curtain__panel--right {
+  transform: translateX(0);
 }
-.listPokeImg{
-  flex-wrap: wrap;
+      
+.curtain__panel {
+  background: #cc0a0a;
+  width: 100%; 
+  height: 50%; 
+  float: left; 
+  position: relative; 
+  z-index: 2; 
+  transition: all 1s ease-out;
 }
-#pokemonCard{
-  display: none;
+
+/* Paneles abiertos */
+.curtain__panel--left {
+  background-image: url("https://i.imgur.com/oDmJHew.png");
+  /* background-image: url("https://i.imgur.com/mT3FFMK.png");  */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-100%);
 }
-/* LISTS */
-#pokemonList{
-  display: flex;
-  display: none;
-  flex-direction: row;
-  justify-content: flex-start;
+
+.curtain__panel--right {
+  background-image: url("https://i.imgur.com/hQ7UIub.png");
+  /* background-image: url("https://i.imgur.com/UUeUcIo.png");  */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(100%);
 }
-.boxWrapper2{ /* Minimiza formato de listas filtradas */
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 25%;
-  float: left;
-  margin: 10px;
-}
-.listPokeImg{
-  flex-wrap: wrap;
-}
-.listLabels{
-  flex-wrap: wrap;
-}
+
 /* Top Nav Bar */
 .topNav {
   overflow: hidden;
-  background-color: #fb0505;
-  /* margin-right:14px; */
+  background-color: #cc0a0a;
+  height: 10vh;
+
 }
  /* Search Bar */
   .topNav input[type=text] {
@@ -67,6 +80,7 @@
     margin-bottom: 8px;
     margin-right: 8px;
     font-size: 12px;
+    height: 14px;
   }
   .topNav input[type=button] {
     float: right;
@@ -150,16 +164,16 @@
      margin-left: 100px;
    } 
    .openbtn {
-     margin-left: 10px;
-     margin-top: 10px;
-     padding-top: 10px;
+     margin-left: 8px;
+     margin-top: 2px;
+     margin-bottom: 8px;
+     cursor:pointer;
     }
+
 /* END TOP NAV BAR AND SIDE MENU */
 
-/* Order function screens */
-.listLabels{
-  flex-wrap: wrap;
-}
+/* Display screens */
+
 #typeMenu{
   display: none;
 }
@@ -169,26 +183,31 @@
 #orderMenu{
   display: none;
 }
+#divMaxCP{
+  display: none;
+}
+#pokemonCard{
+  display: none;
+}
 
+
+/* pokemonCard display style */  
+
+/* PKM img on PokemonCard */
 .pokemonImg{
-  z-index: 10;
-  width: 40%;
-  height: 40%; 
-}
- 
-.listPokeImg{
   width: 40%;
   height: 40%; 
 }
 
-.wrapper {
-  display:grid;
+/* .wrapper {
+  /* display:grid;
   grid-gap:1em;
   grid-auto-rows: minmax(100px, auto);
   grid-template-columns: 3fr 1fr 2fr;
   grid-template-rows: repeat(6, 1fr);
   padding: 1em;
-}
+
+} */
 
 .wrapper > div {
   background: #eee;
@@ -201,45 +220,78 @@
   background: #ddd;
 }
 
-.box1 { /* Imagen */
+
+/* pokemonList display style */
+/* List parent */
+.wrapper2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+  /* Hijos each PKM */
+  .boxWrapper2{
+    flex-direction: column;
+    display: inline; 
+    }
+
+    /* Imagen */
+    .listPokeImg{
+      flex-wrap: wrap;
+      width: 40%;
+      height: 40%; 
+    }
+
+    /* Name + num each PKM */
+    .listLabels{
+      /* display: inline; */
+      flex-wrap: wrap;
+    }
+
+
+/* .box1 { Imagen
   grid-column: 1/2;
   grid-row: 1/4;
 }
 
-.box2 { /* Numero & Nombre */
+.box2 { Numero & Nombre
   grid-column: 2/4;
   grid-row: 1/2;
 }
 
-.box3 { /* Tipo */
+.box3 { Tipo
   grid-column:2/4;
   grid-row: 2/3;
 }
 
-.box4 { /* Evoluciones */
+.box4 { Evoluciones
   grid-column: 2/4;
   grid-row: 3/4;
 }
 
-.box5 { /* Descripción */
+.box5 { Descripción
   grid-column: 1/4;
   grid-row: 4/5;
 }
 
-.box6 { /* Debilidades */
+.box6 { Debilidades
   grid-column: 1/4;
   grid-row: 5/6;
 }
 
-.box7 { /* Info del juego */
+.box7 { Info del juego
   grid-column: 1/3;
   grid-row: 6/7;
 }
 
-.box8 { /* Calculador */
+.box8 { Calculador
 grid-column: 3/4;
 grid-row: 6/7;
-}
+} */
 
 /* Se comentó 04/03 y no se observaron cambios */
 /* .wrapper2{
@@ -250,3 +302,4 @@ grid-row: 6/7;
   grid-template-rows: repeat(7, 1fr);
   padding: 1em;
 } */
+
